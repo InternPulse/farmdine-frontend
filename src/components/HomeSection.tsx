@@ -4,8 +4,8 @@ import homeSection from "../assets/HomeSection.png"
 const HomeSection = () => {
 	return (
 		<div className='container mx-auto pb-9'>
-			<div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-				<div className='pt-64 ml-20'>
+			<div className='grid grid-cols-1 md:grid-cols-2 gap-20 px-24'>
+				<div className='pt-64'>
 					<h1 className='text-4xl font-bold'>
 						<span className='bg-gradient-to-r from-green0 via-green47 to-green100 inline-block text-transparent bg-clip-text pr-2'>
 							FarmDine
@@ -19,7 +19,7 @@ const HomeSection = () => {
 					</button>
 				</div>
 				<div>
-					<img src={homeSection} alt='' className='mt-40' />
+					<img src={homeSection} alt='homeSection Image' className='mt-40' />
 				</div>
 			</div>
 		</div>
