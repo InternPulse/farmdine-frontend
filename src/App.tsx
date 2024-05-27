@@ -1,11 +1,11 @@
-import React from "react";
+import HomeSection from "./Components/HomeSection"
 
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
-};
+	return (
+		<>
+			<HomeSection />
+		</>
+	)
+}
 
 export default App;
