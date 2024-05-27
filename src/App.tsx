@@ -1,10 +1,11 @@
 // src/App.tsx
 import React from 'react';
+import Events from './Components/Events';
 
-const App: React.FC = () => {
+const App: React.FC = (): JSX.Element => {
   return (
     <>
-      <h1 className="text-3xl text-center mt-80 text-green-800">Hello FarmDine!!!</h1>
+     <Events />
     </>
   );
 }
