@@ -1,9 +1,9 @@
-import HomeSection from "./components/HomeSection"
+import SignUpPage from "./pages/SignUpPage"
 
 const App: React.FC = () => {
 	return (
 		<>
-			<HomeSection />
+			<SignUpPage />
 		</>
 	)
 }
