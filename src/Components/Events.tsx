@@ -19,27 +19,30 @@ const Events: React.FC = (): React.ReactElement => {
   };
 
   return (
+
     <div>
-      <h1 className="text-3xl font-bold text-center">Events</h1>
-      <p className="text-center mt-4">Farming events unite the agricultural community to celebrate, share, and innovate.</p>
-      <div className="relative w-full max-w-lg mx-auto mt-8 overflow-hidden bg-slate-500 ">
-        <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
-          <h2 className="text-2xl font-semibold">{eventData[currentIndex].title}</h2>
-          <p className="mt-2">{eventData[currentIndex].description}</p>
+        <h1 className="text-3xl font-bold text-center">Events</h1>
+        <p className="text-center mt-4">Farming events unite the agricultural community to celebrate, share, and innovate.</p>
+
+        <div className="relative w-full max-w-lg mx-auto mt-8 overflow-hidden bg-slate-500 ">
+            <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
+            <h2 className="text-2xl font-semibold">{eventData[currentIndex].title}</h2>
+            <p className="mt-2">{eventData[currentIndex].description}</p>
+            </div>
+            <button 
+            onClick={handlePrev} 
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
+            >
+            Previous
+            </button>
+            <button 
+            onClick={handleNext} 
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
+            >
+            Next
+            </button>
         </div>
-        <button 
-          onClick={handlePrev} 
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
-        >
-          Previous
-        </button>
-        <button 
-          onClick={handleNext} 
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
-        >
-          Next
-        </button>
-      </div>
+        
     </div>
   );
 };

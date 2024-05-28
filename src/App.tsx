@@ -1,13 +1,15 @@
-// src/App.tsx
-import React from 'react';
-import Events from './Components/Events';
+import HomeSection from "./pages/HomeSection"
+// import Dashboard from "./pages/Dashboard"
+import SignUpPage from "./pages/SignUpPage"
 
-const App: React.FC = (): JSX.Element => {
-  return (
-    <>
-     <Events />
-    </>
-  );
+const App: React.FC = () => {
+	return (
+		<>
+			<HomeSection />
+			{/* <Dashboard />  */}
+			<SignUpPage />
+		</>
+	)
 }
 
-export default App;
+export default App
