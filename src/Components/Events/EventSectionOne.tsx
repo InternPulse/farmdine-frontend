@@ -4,10 +4,13 @@ import FarmDine from './FarmDine';
 const EventSectionOne: React.FC = () => {
   const imageUrl1 = 'src/assets/section1.png'; 
   const imageUrl2 = 'src/assets/section2.jpg';
+  const imageIcon1 = 'src/assets/partners03.png';
+  const imageIcon2 = 'src/assets/partners02.png';
 
   return (
     <div>
       <FarmDine
+      imageIcon = {imageIcon1}
         title={
           <>
             FarmDine: Revolutionizing Agricultural Trade with{' '}
@@ -20,6 +23,7 @@ const EventSectionOne: React.FC = () => {
         buttonOnClick={() => { /* Handle button click here */ }}
       />
       <FarmDine
+       imageIcon = {imageIcon2}
           title={
             <>
               FarmDine: Revolutionizing Agricultural Trade with{' '}
