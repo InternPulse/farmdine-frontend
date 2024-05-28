@@ -23,7 +23,7 @@ const TeamMembers: React.FC = () => {
             {/* Contact Us Button */}
             </div>
             <div className="w-52 h-14 p-2.5 bg-lime-400 rounded-lg justify-center items-center gap-2.5 inline-flex">
-              <div className="text-stone-900 text-xl font-semibold font-['Roboto'] leading-10">Contact Us</div>
+              <div className="text-stone-900 text-l font-semibold font-['Roboto'] leading-10">Contact Us</div>
             </div>
           </div>
           {/* Team Members' Images */}
