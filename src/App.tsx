@@ -1,13 +1,15 @@
-import HomeSection from "./pages/HomeSection"
+import ContactPage from "./pages/ContactPage"
+//import HomeSection from "./pages/HomeSection"
 // import Dashboard from "./pages/Dashboard"
-import SignUpPage from "./pages/SignUpPage"
+//import SignUpPage from "./pages/SignUpPage"
 
 const App: React.FC = () => {
 	return (
 		<>
-			<HomeSection />
+			{/* <HomeSection /> */}
+			<ContactPage />
 			{/* <Dashboard />  */}
-			<SignUpPage />
+			{/* <SignUpPage /> */}
 		</>
 	)
 }
