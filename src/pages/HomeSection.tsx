@@ -1,7 +1,8 @@
+import React from "react"
 import arrow from "../assets/arrow-right.png"
 import homeSection from "../assets/HomeSection.png"
 
-const HomeSection = () => {
+const HomeSection: React.FC = () => {
 	return (
 		<div className='container mx-auto pb-9'>
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-20 px-24'>
