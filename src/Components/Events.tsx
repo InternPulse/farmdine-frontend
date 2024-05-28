@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // data for the carousel
 const eventData = [
-  { id: 1, title: "Event 1", description: "World Farmers' Day, also known as National Farmers' Day, is celebrated on December 23rd every year. It is a day to recognize and appreciate the contributions of farmers to our society. Farmers play a vital role in feeding our communities, preserving natural resources, and supporting local economies." },
+  { id: 1, title: "World's Farmers Day", description: "World Farmers' Day, also known as National Farmers' Day, is celebrated on December 23rd every year. It is a day to recognize and appreciate the contributions of farmers to our society. Farmers play a vital role in feeding our communities, preserving natural resources, and supporting local economies." },
   { id: 2, title: "Event 2", description: "Description of Event 2" },
   { id: 3, title: "Event 3", description: "Description of Event 3" },
 ];
@@ -24,22 +24,23 @@ const Events: React.FC = (): React.ReactElement => {
         <h1 className="inline-block bg-green-100 text-green-400 text-center mt-1 px-6 py-2 text-xs">Events</h1>
         <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br></br> to celebrate, share, and innovate.</p>
 
-        <div className="relative mx-20 my-20 py-52 text-white overflow-hidden bg-events-bg rounded">
+        <div className="relative w-full ml-4 my-20 py-52 text-white overflow-hidden bg-events-bg bg-no-repeat rounded">
             <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
-            <h2 className="text-2xl font-semibold">{eventData[currentIndex].title}</h2>
-            <p className="mt-2">{eventData[currentIndex].description}</p>
+                <div className="w-3/5 text-left mt-10 ml-4">
+                    <h2 className="text-3xl font-semibold">{eventData[currentIndex].title}</h2>
+                    <p className="mt-2 ">{eventData[currentIndex].description}</p>
+                </div>
             </div>
             <button 
             onClick={handlePrev} 
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
-            >
-            Previous
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 border rounded shadow focus:outline-none">
+
             </button>
             <button 
             onClick={handleNext} 
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white border border-gray-300 p-2 rounded shadow hover:bg-gray-100 focus:outline-none"
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 rounded focus:outline-none"
             >
-            Next
+           <img src="src/assets/arrow-right-bold.png" alt="arrow right" />
             </button>
         </div>
         
