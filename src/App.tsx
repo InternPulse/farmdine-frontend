@@ -1,9 +1,9 @@
-import SignUpPage from "./pages/SignUpPage"
+import SignUpSelectionPage from "./pages/SignUpSelectionPage"
 
 const App: React.FC = () => {
 	return (
 		<>
-			<SignUpPage />
+			<SignUpSelectionPage />
 		</>
 	)
 }

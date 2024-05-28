@@ -12,7 +12,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ["Roboto", "ui-sans-serif", "system-ui"],
-				openSans: ['"Open Sans"', "ui-sans-serif", "system-ui"],
+				openSans: ["Open Sans", "ui-sans-serif", "system-ui"],
 			},
 			padding: {
 				"signup-padding": "26.25rem",
