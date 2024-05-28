@@ -1,11 +1,13 @@
-import HomeSection from "./components/HomeSection"
+import React from 'react';
+import ProductSection from './components/ProductSection';
 
 const App: React.FC = () => {
-	return (
-		<>
-			<HomeSection />
-		</>
-	)
+    return (
+        <div>
+            <ProductSection />
+        </div>
+    );
 }
 
-export default App
+export default App;
+
