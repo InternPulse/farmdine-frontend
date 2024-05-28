@@ -42,6 +42,10 @@ const Events: React.FC = (): React.ReactElement => {
             >
            <img src="src/assets/arrow-right-bold.png" alt="arrow right" />
             </button>
+
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
+                <img src="src/assets/slider-dots.png" alt="slider dots" />
+            </div>
         </div>
         
     </div>
