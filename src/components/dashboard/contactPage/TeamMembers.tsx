@@ -10,31 +10,33 @@ const TeamMembers: React.FC = () => {
               <div className="flex-col justify-start items-start flex">
                 <div className="flex-col justify-start items-start gap-3.5 flex">
                   <div className="w-44 p-2.5 bg-lime-custom rounded-3xl justify-center items-center gap-2.5 inline-flex">
-                    <div className="text-lime-400 text-lg font-semibold font-['Open Sans']">Team members</div>
+                    <div className="text-lime-400 text-sm font-normal font-['Open Sans']">Team members</div>
                   </div>
                   <div className="text-stone-900 text-5xl font-semibold font-['Roboto']">
                     Meet Our Amazing <br /> Team Members
                   </div>
-                  <div className="w-96 h-28 text-stone-900 text-lg font-normal font-['Open Sans'] leading-normal">
+                  <div className="w-96 h-20 text-stone-900 text-sm font-normal font-['Open Sans'] leading-normal">
                     At Farmdine, our team bridges the gap between farmers and communities with a commitment to sustainable agriculture and fresh, local food. Meet the innovators driving change in agriculture.
                   </div>
                 </div>
               </div>
+            {/* Contact Us Button */}
             </div>
             <div className="w-52 h-14 p-2.5 bg-lime-400 rounded-lg justify-center items-center gap-2.5 inline-flex">
               <div className="text-stone-900 text-xl font-semibold font-['Roboto'] leading-10">Contact Us</div>
             </div>
           </div>
+          {/* Team Members' Images */}
           <div className="w-96 h-96 relative">
-            <img className="w-80 h-72 left-[230px] top-0 absolute rounded-2xl" src="https://via.placeholder.com/348x285" />
-            <img className="w-72 h-80 left-0 top-[126px] absolute rounded-2xl" src="https://via.placeholder.com/290x316" />
-            <img className="w-80 h-96 left-[208px] top-[233px] absolute rounded-2xl" src="../../../assets/images/contactpage3.png" />
+            <img className=" left-[230px] top-0 absolute rounded-2xl" src="../../../assets/images/contactPage1.png" alt='TeamMembers' />
+            <img className="w-72 h-80 left-0 top-[126px] absolute rounded-2xl" src="../../../assets/images/contactPage2.png" alt='TeamMembers' />
+            <img className="w-80 h-96 left-[208px] top-[233px] absolute rounded-2xl" src="../../../assets/images/contactPage3.png" alt='TeamMembers'/>
           </div>
         </div>
-        <div className="justify-start items-center gap-28 inline-flex">
+        <div className=" justify-start items-center gap-28 inline-flex">
           <div className="justify-start items-center gap-24 flex">
             <div className="flex-col justify-start items-start gap-6 inline-flex">
-              <div className="text-black/opacity-70 text-xl font-semibold font-['Open Sans']">Follow us</div>
+              <div className="text-black/opacity-70 text-xl font-sm font-['Open Sans']">Follow us</div>
               <div className="justify-start items-start gap-2.5 inline-flex">
                 <div className="justify-center items-center gap-2.5 flex">
                   <div className="w-9 h-9 bg-white rounded-full" />
