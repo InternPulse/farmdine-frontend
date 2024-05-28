@@ -20,11 +20,11 @@ const Events: React.FC = (): React.ReactElement => {
 
   return (
 
-    <div>
-        <h1 className="text-3xl font-bold text-center">Events</h1>
-        <p className="text-center mt-4">Farming events unite the agricultural community to celebrate, share, and innovate.</p>
+    <div className="flex justify-center items-center flex-col">
+        <h1 className="inline-block bg-green-100 text-green-400 text-center mt-1 px-6 py-2 text-xs">Events</h1>
+        <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br></br> to celebrate, share, and innovate.</p>
 
-        <div className="relative w-full max-w-lg mx-auto mt-8 overflow-hidden bg-slate-500 ">
+        <div className="relative mx-20 my-20 py-52 text-white overflow-hidden bg-events-bg rounded">
             <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
             <h2 className="text-2xl font-semibold">{eventData[currentIndex].title}</h2>
             <p className="mt-2">{eventData[currentIndex].description}</p>

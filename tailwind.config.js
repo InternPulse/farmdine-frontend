@@ -1,19 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-<<<<<<< HEAD
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/img/hero-pattern.svg')",
-      }
-    },
-  },
-  plugins: [],
-=======
+
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
@@ -31,8 +18,11 @@ export default {
 			padding: {
 				"signup-padding": "26.25rem",
 			},
+      backgroundImage: {
+        'events-bg': "url('src/assets/eventsbg.jpg')"
+      }
 		},
 	},
 	plugins: [],
->>>>>>> 19e3edfdb48aa595164cb4cef483e0db20247a3e
+
 }
