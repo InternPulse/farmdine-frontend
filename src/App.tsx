@@ -1,10 +1,12 @@
 import React from 'react';
-import Login from './pages/Login';
+// import Login from './pages/Login';
+import HomeSection from './pages/HomeSection';
 
 const App: React.FC = () => {
     return (
         <div>
-            <Login />
+            {/* <Login /> */}
+            <HomeSection />
         </div>
     )
 }
