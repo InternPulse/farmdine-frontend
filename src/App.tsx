@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductSection from './components/ProductSection';
+import ProductSection from './pages/ProductSection';
 
 const App: React.FC = () => {
     return (
