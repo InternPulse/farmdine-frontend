@@ -1,16 +1,16 @@
 
 import HomeSection from "./pages/HomeSection"
 // import Dashboard from "./pages/Dashboard"
-import SignUpPage from "./pages/SignUpPage"
-import Events from "./Components/Events"
+// import SignUpPage from "./pages/SignUpPage"
+import Events from "./components/Events"
 
 const App: React.FC = () => {
 	return (
 		<>
 			<HomeSection />
 			{/* <Dashboard />  */}
-			<SignUpPage />
-      		<Events />
+			{/* <SignUpPage /> */}
+            <Events />
 		</>
 	)
 }
