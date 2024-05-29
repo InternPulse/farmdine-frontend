@@ -1,11 +1,12 @@
 import React from 'react';
-import ProductSection from './components/ProductSection';
+import Login from './pages/Login';
 
 const App: React.FC = () => {
     return (
         <div>
-            <ProductSection />
+            <Login />
         </div>
     );
 }
+
 export default App;
