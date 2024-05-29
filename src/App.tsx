@@ -2,7 +2,7 @@
 import HomeSection from "./pages/HomeSection"
 // import Dashboard from "./pages/Dashboard"
 // import SignUpPage from "./pages/SignUpPage"
-import Events from "./components/Events"
+import Events from "./Components/Events"
 
 const App: React.FC = () => {
 	return (
