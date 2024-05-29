@@ -4,6 +4,7 @@ interface FarmDineProps {
   title: React.ReactNode; // Change to ReactNode to accept JSX
   description: React.ReactNode;
   imageUrl: string;
+  textIcon: string;
   imageIcon: string;
   buttonText?: string; // Optional button text
   buttonOnClick?: () => void; // Optional button click handler
@@ -13,6 +14,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
   title,
   description,
   imageUrl,
+  textIcon,
   imageIcon,
   buttonText,
   buttonOnClick,
@@ -21,7 +23,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
     <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-screen mx-auto px-8 py-10">
       <div className="flex items-center space-x-32 ml-32 mt-10">
         <div className="w-2/5"> 
-        <img src={imageIcon} alt="person icon" className="w-12 h-12" />
+        <img src={textIcon} alt="person icon" className="w-12 h-12" />
           <h2 className="text-2xl font-semibold mb-4 tracking-wider">
             {title}
           </h2>

@@ -5,12 +5,14 @@ const EventSectionOne: React.FC = () => {
   const imageUrl1 = 'src/assets/section1.png'; 
   const imageUrl2 = 'src/assets/section2.jpg';
   const imageIcon1 = 'src/assets/partners03.png';
+  const imageIcon01 = 'src/assets/partners01.png';
   const imageIcon2 = 'src/assets/partners02.png';
+  const imageIcon02 = 'src/assets/infinity.svg.png';
 
   return (
     <div>
       <FarmDine
-      imageIcon = {imageIcon1}
+      textIcon = {imageIcon1}
         title={
           <>
             FarmDine: Revolutionizing Agricultural Trade with{' '}
@@ -19,11 +21,12 @@ const EventSectionOne: React.FC = () => {
         }
         description={<> - Instant connections with potential buyers <br></br> - Real-time communication and negotiation <br></br>- Secure and seamless transactions <br></br> - Increased sales and growth </>}
         imageUrl={imageUrl1}
+        imageIcon = {imageIcon01}
         buttonText="Sign up for free"
         buttonOnClick={() => { /* Handle button click here */ }}
       />
       <FarmDine
-       imageIcon = {imageIcon2}
+       textIcon = {imageIcon2}
           title={
             <>
               FarmDine: Revolutionizing Agricultural Trade with{' '}
@@ -32,6 +35,7 @@ const EventSectionOne: React.FC = () => {
           }
         description={<> - Instant connections with potential buyers <br></br> - Real-time communication and negotiation <br></br>- Secure and seamless transactions <br></br> - Increased sales and growth </>}
         imageUrl={imageUrl2}
+        imageIcon = {imageIcon02}
         buttonText="Sign up for free"
         buttonOnClick={() => { /* Handle button click here */ }}
       />
