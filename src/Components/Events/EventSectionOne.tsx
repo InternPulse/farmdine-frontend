@@ -39,6 +39,14 @@ const EventSectionOne: React.FC = () => {
         buttonText="Sign up for free"
         buttonOnClick={() => { /* Handle button click here */ }}
       />
+      <div className="flex justify-center items-center card -mt-52">
+        <div className="bg-white text-slate-900 p-4 rounded-lg shadow-md text-center">
+          <img className = "m-auto pb-2" src="src/assets/tick-circle.jpg" alt="tick icon" />
+          <h2>Buy/Sell</h2>
+          <p>Transaction Successfull</p>
+          <button className="bg-slate-900 hover:bg-slate-700 text-white text-xs py-1 rounded mt-4 w-60">Done</button>
+        </div>
+      </div>
     </div>
   );
 };

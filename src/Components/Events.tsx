@@ -21,7 +21,7 @@ const Events: React.FC = (): React.ReactElement => {
 
   return (
 
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col ml-3">
         <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
         <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br></br> to celebrate, share, and innovate.</p>
 

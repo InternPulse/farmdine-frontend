@@ -38,7 +38,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
           )}
         </div>
         <div>
-        <img src={imageIcon} alt="person icon" className="w-12 h-12" />
+        <img src={imageIcon} alt="person icon" className="w-12 h-12 ml-96" />
           <img
             src={imageUrl}
             alt={typeof title === 'string' ? title : 'FarmDine Image'}
