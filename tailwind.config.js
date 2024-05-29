@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
@@ -20,9 +21,13 @@ export default {
 			padding: {
 				"signup-padding": "26.25rem",
 			},
+      backgroundImage: {
+        'events-bg': "url('src/assets/eventsbg.jpg')"
+      }
 		},
 	},
 	plugins: [],
+
 }
 
 // ** TAILWIND CSS  FONT GUIDE **

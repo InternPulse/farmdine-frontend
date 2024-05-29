@@ -1,14 +1,18 @@
-import React from 'react';
-// import Login from './pages/Login';
-import HomeSection from './pages/HomeSection';
+
+import HomeSection from "./pages/HomeSection"
+// import Dashboard from "./pages/Dashboard"
+import SignUpPage from "./pages/SignUpPage"
+import Events from "./Components/Events"
 
 const App: React.FC = () => {
-    return (
-        <div>
-            {/* <Login /> */}
-            <HomeSection />
-        </div>
-    )
+	return (
+		<>
+			<HomeSection />
+			{/* <Dashboard />  */}
+			<SignUpPage />
+      		<Events />
+		</>
+	)
 }
 
 export default App;
