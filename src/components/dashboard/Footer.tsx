@@ -1,16 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram as fabInstagram, faSkype as fabSkype, faWhatsapp as fabWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-10">
+    <footer className="bg-white text-black py-10">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         
         {/* First Column */}
         <div>
           <div className="flex items-center mb-4">
-            <img src="/src/assets/farm-dine-logo.svg" className="h-10 w-10 text-white" />
+            <img src="/src/assets/farm-dine-logo.svg" className="h-10 w-10" alt="Farmdine Logo" />
             <span className="ml-2 text-2xl font-bold">FARMDINE</span>
           </div>
           <p>Sourcing Hub For Food Enterprises And African Farmers</p>
@@ -72,7 +73,46 @@ const Footer: React.FC = () => {
             <li className="mb-2">Empowering Farmers and Serving You</li>
           </ul>
         </div>
+      </div>
+      
+      {/* New Row with Three Columns */}
+      <div className="container mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        {/* First Column */}
+        <div>
+          <p className="mb-4"><strong>© 2024 Farmdine. All rights reserved</strong></p>
+          <p>
+            <a href="#" className="hover:underline">Privacy Policy</a> | <a href="#" className="hover:underline">Terms and Conditions</a>
+          </p>
+        </div>
 
+        {/* Second Column */}
+        <div className="flex justify-center items-center space-x-4">
+          <div className="flex items-center">
+            <img src="/path/to/nigeria-flag.png" alt="Nigeria Flag" className="h-5 w-5 mr-2" />
+            <span>Nigeria</span>
+          </div>
+          <div className="flex items-center">
+            <img src="/path/to/ghana-flag.png" alt="Ghana Flag" className="h-5 w-5 mr-2" />
+            <span>Ghana</span>
+          </div>
+          <div className="flex items-center">
+            <img src="/path/to/usa-flag.png" alt="USA Flag" className="h-5 w-5 mr-2" />
+            <span>USA</span>
+          </div>
+        </div>
+
+        {/* Third Column */}
+        <div className="flex justify-center space-x-4">
+          <a href="#" className="text-black hover:text-gray-600">
+            <FontAwesomeIcon icon={fabInstagram} className="h-6 w-6" />
+          </a>
+          <a href="#" className="text-black hover:text-gray-600">
+            <FontAwesomeIcon icon={fabSkype} className="h-6 w-6" />
+          </a>
+          <a href="#" className="text-black hover:text-gray-600">
+            <FontAwesomeIcon icon={fabWhatsapp} className="h-6 w-6" />
+          </a>
+        </div>
       </div>
     </footer>
   );
