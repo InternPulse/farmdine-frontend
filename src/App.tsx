@@ -6,7 +6,7 @@ const App: React.FC = () => {
         <div>
             <Login />
         </div>
-    );
+    )
 }
 
 export default App;
