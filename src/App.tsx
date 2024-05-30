@@ -1,18 +1,28 @@
-import React from "react"
-import Navbar from "./components/Navbar/Navbar"
-import HomeSection from "./pages/HomeSection"
-// import Dashboard from "./pages/Dashboard"
-// import SignUpPage from "./pages/SignUpPage"
-import Events from "./components/Events"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/HomeSection";
+import ProductListing from "./pages/ProductListing";
+import Contact from "./pages/ContactPage";
+import Help from "./pages/Help";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUpPage";
 
 const App: React.FC = () => {
-	return (
-		<>
-		<Navbar />
-			<HomeSection />
-            <Events />
-		</>
-	)
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductListing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+

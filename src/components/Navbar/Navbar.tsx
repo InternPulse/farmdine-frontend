@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import navLogo1 from "../../assets/nav-logo1.jpg";
 
@@ -8,26 +9,26 @@ const Navbar: React.FC = () => {
       <nav className="navbar flex items-center flex-grow justify-between">
         <img src={navLogo1} alt="Company Logo" className="logo" />
         <div className="products flex justify-center space-x-8">
-          <a href="/" className="nav-link-home">
+          <Link to="/" className="nav-link-home">
             Home
-          </a>
-          <a href="/" className="nav-link">
+          </Link>
+          <Link to="/products" className="nav-link">
             Product Listing
-          </a>
-          <a href="/" className="nav-link">
+          </Link>
+          <Link to="/contact" className="nav-link">
             Contact
-          </a>
-          <a href="/" className="nav-link">
+          </Link>
+          <Link to="/help" className="nav-link">
             Help
-          </a>
+          </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <a href="/" className="log-in-button">
+          <Link to="/login" className="log-in-button">
             Log in
-          </a>
-          <a href="/" className="sign-up-button">
+          </Link>
+          <Link to="/signup" className="sign-up-button">
             Sign Up
-          </a>
+          </Link>
         </div>
       </nav>
     </div>
