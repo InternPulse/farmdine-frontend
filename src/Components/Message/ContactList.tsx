@@ -8,7 +8,7 @@ interface ContactListProps {
 
 const ContactList: React.FC<ContactListProps> = ({ contacts, onSelectContact }) => {
   return (
-    <div className="w-1/4 border-r mt-8 ml-12">
+    <div className="w-1/4 border-r mt-8 ml-12 overflow-y-auto h-full">
       <h1 className='font-bold text-2xl pb-2 mb-2'>Messages</h1>
       <div className='flex bg-slate-200 p-1 w-60 rounded-lg ml-2'>
         <img className='m-1 w-4 h-4 bg-slate-200' src="src/assets/search-icon.png" alt="search icon" />
