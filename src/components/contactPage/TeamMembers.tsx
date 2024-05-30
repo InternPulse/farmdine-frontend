@@ -44,7 +44,7 @@ const TeamMembers: React.FC = () => {
         </div>
         {/* Contact Info Section */}
         <div className="px-60 py-40 justify-start items-center gap-2 inline-flex">
-          <div className="justify-start items-center gap-20 flex">
+          <div className="justify-start items-center gap-28 flex">
             {/* Social Media */}
             <div className="flex-col justify-start items-start gap-6 inline-flex">
               <div className="text-black/opacity-70 text-xl font-sm font-['Open Sans']">Follow us</div>

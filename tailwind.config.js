@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	theme: {
+		extend: {},
+	},
+	plugins: [],
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
@@ -19,8 +16,7 @@ export default {
 				"form-gray": "#A8A8A8",
 			},
 			backgroundColor: {
-        	"lime-custom": "rgba(139, 195, 74, 0.17)",
-			"contactForm": "#E4EDD9",
+				"lime-custom": "rgba(139, 195, 74, 0.17)", // Custom color
 			},
 			fontFamily: {
 				sans: ["Roboto", "ui-sans-serif", "system-ui"],
@@ -66,7 +62,6 @@ export default {
 // font-bold: 700
 // font-extrabold: 800
 // font-black: 900
-
 
 // ** TEXT ALIGNMENT **
 // text-left: Left align text
