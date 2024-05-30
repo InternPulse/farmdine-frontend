@@ -6,4 +6,5 @@ export default defineConfig({
   server: {
     open: true,
   },
+  assetsInclude: ["**/*.png", "**/*.PNG", "**/*.jpg"]
 });

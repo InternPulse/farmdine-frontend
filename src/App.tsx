@@ -1,29 +1,30 @@
-//import HomeSection from "./Components/HomeSection"
-import Navbar from "./Components/Navbar/Navbar"
-// import Dashboard from "./pages/Dashboard"
-// import SignUpPage from "./pages/SignUpPage"
-import HomeSection from "./pages/HomeSection"
-// import Dashboard from "./pages/Dashboard"
-// import SignUpPage from "./pages/SignUpPage"
-import Events from "./Components/Events"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/HomeSection";
+import ProductListing from "./pages/ProductListing";
+import Contact from "./pages/ContactPage";
+import Help from "./pages/Help";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUpPage";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
-	return (
-		<>
-
-		<Navbar />
-			{/* <HomeSection /> */}
-
-			{/* <Dashboard />  */}
-			{/* <SignUpPage /> */}
-
-
-			<HomeSection />
-			{/* <Dashboard />  */}
-			{/* <SignUpPage /> */}
-            <Events />
-		</>
-	)
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductListing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
+
