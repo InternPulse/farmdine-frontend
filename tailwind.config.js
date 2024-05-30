@@ -11,11 +11,11 @@ export default {
 				"form-gray": "#A8A8A8",
 			},
 			backgroundColor: {
-			'lime-custom': 'rgba(139, 195, 74, 0.17)', // Custom color
+				"lime-custom": "rgba(139, 195, 74, 0.17)", // Custom color
 			},
 			fontFamily: {
 				sans: ["Roboto", "ui-sans-serif", "system-ui"],
-				openSans: ["Open Sans", "ui-sans-serif", "system-ui"],
+				openSans: ['"Open Sans"', "ui-sans-serif", "system-ui"],
 			},
 			padding: {
 				"signup-padding": "26.25rem",
@@ -57,7 +57,6 @@ export default {
 // font-bold: 700
 // font-extrabold: 800
 // font-black: 900
-
 
 // ** TEXT ALIGNMENT **
 // text-left: Left align text
