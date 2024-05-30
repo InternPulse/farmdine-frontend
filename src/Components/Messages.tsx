@@ -3,9 +3,17 @@ import ContactList from './Message/ContactList';
 import ChatWindow from './Message/ChatWindow';
 
 const contacts = [
-  { id: '1', name: 'Alice' },
-  { id: '2', name: 'Bob' },
-  { id: '3', name: 'Charlie' },
+  { id: '1', name: 'Aisha Stephanie' },
+  { id: '2', name: 'Ogbeide Ayoola' },
+  { id: '3', name: 'Micheal Angelo' },
+  { id: '4', name: 'Aziz Akande' },
+  { id: '5', name: 'Reacheline Moyana' },
+  { id: '6', name: 'Thetele Ramoonyane' },
+  { id: '7', name: 'Anezi Jane' },
+  { id: '8', name: 'Aisha Musa' },
+  { id: '9', name: 'Muhammad Musa' },
+  { id: '10', name: 'Ruth Godfrey' },
+  { id: '11', name: 'Blessing Joseph' },
 ];
 
 const messages = {
