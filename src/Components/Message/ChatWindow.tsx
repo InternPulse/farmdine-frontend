@@ -9,11 +9,11 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
   return (
     <div className="w-3/4 h-full p-4 flex flex-col bg-slate-100">
       <div className='flex justify-between items-center bg-slate-50 py-3 pl-2 rounded'>
-          <div className='flex'>
+          <div className='flex ml-10 space-x-6'>
               <img className='w-9 h-9' src="src/assets/profile1.jpg" alt="sender profile picture" />
-              <p>Ruth Godfrey</p> 
+              <p className='mt-2'>Ruth Godfrey</p> 
           </div>
-          <div className='flex'>
+          <div className='flex mr-10 space-x-6'>
               <img className='w-4 h-4' src="src/assets/search-icon.png" alt="search icon"/>
               <img className='w-4 h-4' src="src/assets/call.jpg" alt="call icon" />
               <img className='w-4 h-4' src="src/assets/more-circle.jpg" alt="icon more" />
