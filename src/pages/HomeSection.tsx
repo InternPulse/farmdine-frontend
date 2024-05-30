@@ -1,6 +1,6 @@
 import React from "react"
 import arrow from "../assets/arrow-right.png"
-import homeSection from "../assets/HomeSection.png"
+import homeSection from "../assets/HomeSection.jpg"
 
 const HomeSection: React.FC = () => {
 	return (
