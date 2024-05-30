@@ -2,6 +2,7 @@ import HomeSection from "./pages/HomeSection"
 // import Dashboard from "./pages/Dashboard"
 import SignUpPage from "./pages/SignUpPage"
 import Events from "./Components/Events"
+import Message from "./Components/Messages"
 
 const App: React.FC = () => {
 	return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
 			{/* <Dashboard />  */}
 			<SignUpPage />
       		<Events />
+			<Message />
 		</>
 	)
 }

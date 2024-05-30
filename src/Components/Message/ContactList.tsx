@@ -8,7 +8,11 @@ interface ContactListProps {
 
 const ContactList: React.FC<ContactListProps> = ({ contacts, onSelectContact }) => {
   return (
-    <div className="w-1/4 border-r border-gray-300">
+    <div className="w-1/4 border-r border-gray-300 mt-8 pl-8">
+      <h1 className='font-bold text-xl pb-3'>Messages</h1>
+      <div>
+        <input type="search" name="search" id="search" placeholder='search here...' />
+      </div>
       {contacts.map(contact => (
         <ContactItem
           key={contact.id}

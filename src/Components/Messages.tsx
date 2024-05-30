@@ -27,7 +27,7 @@ const Message: React.FC = () => {
   const [selectedContactId, setSelectedContactId] = useState<string | null>(null);
 
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex mt-8">
       <ContactList
         contacts={contacts}
         onSelectContact={setSelectedContactId}
