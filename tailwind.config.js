@@ -19,7 +19,8 @@ export default {
 				"form-gray": "#A8A8A8",
 			},
 			backgroundColor: {
-        	"lime-custom": "rgba(139, 195, 74, 0.17)"
+        	"lime-custom": "rgba(139, 195, 74, 0.17)",
+			"contactForm": "#E4EDD9",
 			},
 			fontFamily: {
 				sans: ["Roboto", "ui-sans-serif", "system-ui"],
