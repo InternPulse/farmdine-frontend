@@ -7,7 +7,7 @@ interface ChatWindowProps {
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
   return (
-    <div className="w-3/4 h-full p-4 flex flex-col">
+    <div className="w-3/4 h-full p-4 flex flex-col bg-slate-100">
       <div className="flex-grow overflow-y-auto">
         {messages.map(message => (
           <ChatMessage key={message.id} message={message} />
