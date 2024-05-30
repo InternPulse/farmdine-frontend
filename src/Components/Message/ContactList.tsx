@@ -2,8 +2,8 @@ import React from 'react';
 import ContactItem from './ContactItem';
 
 interface ContactListProps {
-  contacts: { id: string; imageUrl: string; name: string; messaage: string;}[];
-  onSelectContact: (id: string) => void;
+  contacts: { id: number; imageUrl: string; name: string; message: string;}[];
+  onSelectContact: (id: number) => number;
 }
 
 const ContactList: React.FC<ContactListProps> = ({ contacts, onSelectContact }) => {

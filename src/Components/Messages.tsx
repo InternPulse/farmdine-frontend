@@ -3,17 +3,17 @@ import ContactList from './Message/ContactList';
 import ChatWindow from './Message/ChatWindow';
 
 const contacts = [
-  { id: 1, imageUrl: 'src/assets/Frame605.jpg', name: 'Aisha Stephanie', message: "Hi there, I saw your product..." },
-  { id: 2, imageUrl: 'src/assets/Frame605.jpg', name: 'Ogbeide Ayoola', message: "Hi there, I saw your product..." },
-  { id: 3, imageUrl: 'src/assets/Frame605.jpg', name: 'Micheal Angelo', message: "Hi there, I saw your product..." },
-  { id: 4, imageUrl: 'src/assets/Frame605.jpg', name: 'Aziz Akande', message: "Hi there, I saw your product..." },
-  { id: 5, imageUrl: 'src/assets/Frame605.jpg', name: 'Reacheline Moyana', message: "Hi there, I saw your product..." },
-  { id: 6, imageUrl: 'src/assets/Frame605.jpg', name: 'Thetele Ramoonyane', message: "Hi there, I saw your product..."  },
-  { id: 7, imageUrl: 'src/assets/Frame605.jpg', name: 'Anezi Jane', message: "Hi there, I saw your product..."  },
-  { id: 8, imageUrl: 'src/assets/Frame605.jpg', name: 'Aisha Musa', message: "Hi there, I saw your product..."  },
-  { id: 9, imageUrl: 'src/assets/Frame605.jpg', name: 'Muhammad Musa' , message: "Hi there, I saw your product..." },
-  { id: 10,imageUrl: 'src/assets/Frame605.jpg',  name: 'Ruth Godfrey', message: "Hi there, I saw your product..."  },
-  { id: 11,imageUrl: 'src/assets/Frame605.jpg',  name: 'Blessing Joseph', message: "Hi there, I saw your product..."  },
+  { id: 1, imageUrl: 'src/assets/profile1.jpg', name: 'Aisha Stephanie', message: "Hi there, I saw your product..." },
+  { id: 2, imageUrl: 'src/assets/profile1.jpg', name: 'Ogbeide Ayoola', message: "Hi there, I saw your product..." },
+  { id: 3, imageUrl: 'src/assets/profile1.jpg', name: 'Micheal Angelo', message: "Hi there, I saw your product..." },
+  { id: 4, imageUrl: 'src/assets/profile1.jpg', name: 'Aziz Akande', message: "Hi there, I saw your product..." },
+  { id: 5, imageUrl: 'src/assets/profile1.jpg', name: 'Reacheline Moyana', message: "Hi there, I saw your product..." },
+  { id: 6, imageUrl: 'src/assets/profile1.jpg', name: 'Thetele Ramoonyane', message: "Hi there, I saw your product..."  },
+  { id: 7, imageUrl: 'src/assets/profile1.jpg', name: 'Anezi Jane', message: "Hi there, I saw your product..."  },
+  { id: 8, imageUrl: 'src/assets/profile1.jpg', name: 'Aisha Musa', message: "Hi there, I saw your product..."  },
+  { id: 9, imageUrl: 'src/assets/profile1.jpg', name: 'Muhammad Musa' , message: "Hi there, I saw your product..." },
+  { id: 10,imageUrl: 'src/assets/profile1.jpg',  name: 'Ruth Godfrey', message: "Hi there, I saw your product..."  },
+  { id: 11,imageUrl: 'src/assets/profile1.jpg',  name: 'Blessing Joseph', message: "Hi there, I saw your product..."  },
 ];
 
 const messages = {
