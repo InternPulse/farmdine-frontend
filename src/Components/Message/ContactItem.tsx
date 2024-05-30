@@ -7,11 +7,11 @@ interface ContactItemProps {
 
 const ContactItem: React.FC<ContactItemProps> = ({ contact, onClick }) => {
   return (
-    <div className="p-2 rounded-lg mr-3 mt-2 cursor-pointer hover:bg-green-100" onClick={onClick}>
+    <div className=" flex p-2 rounded-lg mr-3 mt-2 cursor-pointer hover:bg-green-100" onClick={onClick}>
          <img src={contact.imageUrl} alt={contact.name} className="w-10 h-10 rounded-full mr-3" />
         <div>
-            {contact.name}
-            {contact.message}
+            <div className='block font-bold'>{contact.name}</div>
+            <div className='text-sm'>{contact.message}</div>
         </div>
         
     </div>
