@@ -24,9 +24,14 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ messages }) => {
         ))}
       </div>
       <div className="border-t border-gray-300 p-2 flex">
-        <div>
-          <input type="text" className=" mr-2 rounded pl-4 py-1" placeholder="Type your messages.." />
-          <img className='w-4 h-4' src="src/assets/more-circle.jpg" alt="Open options icon" />
+        <div className='flex justify-between bg-white mr-2 items-center pr-2 rounded-md w-full'>
+          <div>
+            <input type="text" className=" mr-2 rounded pl-4 py-1" placeholder="Type your messages.." />
+          </div>
+          <div className='flex'>
+            <img className='w-4 h-4' src="src/assets/more-circle.jpg" alt="Open options icon" />
+            <img className='w-4 h-4 ml-3' src="src/assets/map-pin.jpg" alt="map pin" />
+          </div>
         </div>
         <img className='w-10 h-8' src="src/assets/send-icon.jpg" alt="send icon" />
       </div>
