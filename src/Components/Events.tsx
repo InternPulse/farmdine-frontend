@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import EventSectionOne from './Events/EventSectionOne';
+import arrowRight from '../assets/arrow-right.png';
+import sliderDots from '../assets/slider-dots.png';
 
 // data for the carousel
 const eventData = [
@@ -20,36 +22,36 @@ const Events: React.FC = (): React.ReactElement => {
   };
 
   return (
-
     <div className="flex justify-center items-center flex-col ml-3">
-        <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
-        <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br></br> to celebrate, share, and innovate.</p>
+      <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
+      <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br /> to celebrate, share, and innovate.</p>
 
-        <div className="relative w-full ml-4 my-20 h-screen text-white overflow-hidden bg-events-bg bg-no-repeat rounded">
-            <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
-                <div className="absolute w-3/5 text-left top-80 left-10">
-                    <h2 className="text-3xl font-semibold">{eventData[currentIndex].title}</h2>
-                    <p className="mt-8 ">{eventData[currentIndex].description}</p>
-                </div>
-            </div>
-            <button 
-            onClick={handlePrev} 
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 border rounded shadow focus:outline-none">
-
-            </button>
-            <button 
-            onClick={handleNext} 
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 rounded focus:outline-none"
-            >
-           <img src="src/assets/arrow-right-bold.png" alt="arrow right" />
-            </button>
-
-            <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
-                <img src="src/assets/slider-dots.png" alt="slider dots" />
-            </div>
+      <div className="relative w-full ml-4 my-20 h-screen text-white overflow-hidden bg-events-bg bg-no-repeat rounded">
+        <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
+          <div className="absolute w-3/5 text-left top-80 left-10">
+            <h2 className="text-3xl font-semibold">{eventData[currentIndex].title}</h2>
+            <p className="mt-8">{eventData[currentIndex].description}</p>
+          </div>
         </div>
-        
-        <EventSectionOne />
+        <button
+          onClick={handlePrev}
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 border rounded shadow focus:outline-none"
+        >
+          &lt;
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 rounded focus:outline-none"
+        >
+          <img src={arrowRight} alt="arrow right" />
+        </button>
+
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
+          <img src={sliderDots} alt="slider dots" />
+        </div>
+      </div>
+
+      <EventSectionOne />
     </div>
   );
 };
