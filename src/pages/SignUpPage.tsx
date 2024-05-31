@@ -1,7 +1,8 @@
+import React from "react"
 import icon from "../assets/icon-question-mark.svg"
 import logo from "../assets/farm-dine-logo.svg"
 
-const SignUpPage = () => {
+const SignUpPage: React.FC = () => {
 	return (
 		<>
 			<div className='absolute'>

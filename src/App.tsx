@@ -1,19 +1,29 @@
-import HomeSection from "./pages/HomeSection"
-// import Dashboard from "./pages/Dashboard"
-import SignUpPage from "./pages/SignUpPage"
-import Events from "./Components/Events"
-// import Message from "./Components/Messages" // should be in the dashboard page
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/HomePage";
+import ProductListing from "./pages/ProductListing";
+import Contact from "./pages/ContactPage";
+import Help from "./pages/HelpPage";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUpPage";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
-	return (
-		<>
-			<HomeSection />
-			{/* <Dashboard />  */}
-			<SignUpPage />
-      		<Events />
-			{/* <Message /> this  should be in the dashboard page*/} 
-		</>
-	)
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductListing />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
