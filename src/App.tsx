@@ -8,7 +8,7 @@ import Contact from "./pages/ContactPage";
 import Help from "./pages/HelpPage";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUpPage";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const App: React.FC = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
