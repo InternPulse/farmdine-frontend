@@ -1,6 +1,6 @@
 import React from "react"
-import HomeSection from "../components/HomeSection"
-import Events from "../components/Events"
+import HomeSection from "../Components/HomeSection"
+import Events from "../Components/Events"
 
 const HomePage: React.FC = () => {
 	return (

@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/HomePage";
 import ProductListing from "./pages/ProductListing";
 import Contact from "./pages/ContactPage";
 import Help from "./pages/HelpPage";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUpPage";
-import Footer from "./components/Footer";
+import Footer from "./Components/Footer";
 
 const App: React.FC = () => {
   return (

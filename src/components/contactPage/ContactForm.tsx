@@ -17,7 +17,7 @@ const ContactForm: React.FC = () => {
       <div className="w-full max-w-2xl px-16 py-10 bg-stone-200 justify-center items-center inline-flex">
         <div className="self-stretch flex-col justify-start items-center gap-7 inline-flex">
           <div className="flex-col justify-start items-center gap-5 flex">
-            <div className="text-stone-900 text-4xl font-semibold font-['Roboto']">Send a message</div>
+            <div className="text-stone-900 text-3xl font-semibold font-['Roboto']">Send a message</div>
             <div className="text-zinc-600 text-sm font-normal font-['Roboto']">
               Need help or support? Just reach out to us. We're here to assist you.
             </div>
