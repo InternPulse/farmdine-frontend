@@ -2,7 +2,7 @@ import HomeSection from "./pages/HomeSection"
 // import Dashboard from "./pages/Dashboard"
 import SignUpPage from "./pages/SignUpPage"
 import Events from "./Components/Events"
-import Message from "./Components/Messages"
+// import Message from "./Components/Messages" // should be in the dashboard page
 
 const App: React.FC = () => {
 	return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
 			{/* <Dashboard />  */}
 			<SignUpPage />
       		<Events />
-			<Message />
+			{/* <Message /> this  should be in the dashboard page*/} 
 		</>
 	)
 }
