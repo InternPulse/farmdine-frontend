@@ -1,9 +1,9 @@
-import HomeSection from "./components/HomeSection"
+import ProductSection from './pages/ProductSection';
 
 export default function App() {
 	return (
 		<>
-			<HomeSection />
+			<ProductSection />
 		</>
 	)
 }
