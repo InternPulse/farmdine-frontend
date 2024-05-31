@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import viteLogo from './assets/vite.svg'; // Ensure this path is correct
 import './App.css';
 import ProductSection from './pages/ProductSection';
 
@@ -33,6 +33,9 @@ const App: React.FC = () => {
       <div>
         <h1 className="text-green-400">Farmdine</h1>
       </div>
+      <h1 className="text-3xl font-bold bg-yellow-900 text-white">
+        Farmdine
+      </h1>
     </div>
   );
 }
