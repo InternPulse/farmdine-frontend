@@ -6,3 +6,9 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.PNG'] // Ensure Vite includes .PNG files as assets
 })
+  css: {
+    postcss: {
+      plugins: [],
+    },
+  },
+});
