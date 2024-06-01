@@ -1,9 +1,9 @@
-import Messages from "./Components/Messages"
+import Chat from "./Components/Chat"
 
 const App: React.FC = () => {
 	return (
 		<>
-      		<Messages />
+      <Chat />
 		</>
 	)
 }
