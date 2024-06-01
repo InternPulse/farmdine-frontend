@@ -18,9 +18,9 @@ export default {
 			padding: {
 				"signup-padding": "26.25rem",
 			},
-      backgroundImage: {
-        'events-bg': "url('src/assets/eventsbg.jpg')"
-      }
+      		backgroundImage: {
+        		'events-bg': "url('src/assets/eventsbg.jpg')"
+      		}
 		},
 	},
 	plugins: [],
