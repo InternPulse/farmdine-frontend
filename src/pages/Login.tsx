@@ -1,6 +1,6 @@
 import React from 'react';
-import googleLogo from '../assets/google.PNG';
-import appleLogo from '../assets/Apple.PNG';
+import googleLogo from '../assets/google.png';
+import appleLogo from '../assets/Apple.png';
 
 const Login: React.FC = () => {
     return (
