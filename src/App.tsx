@@ -1,8 +1,12 @@
+import React from 'react';
+import ProductSection from './pages/ProductSection';
 
-
-export default function App() {
-
-	return <>
-
-	</>
+const App: React.FC = () => {
+    return (
+        <div>
+            <ProductSection />
+        </div>
+    );
 }
+
+export default App;
