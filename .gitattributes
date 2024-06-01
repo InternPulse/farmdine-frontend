@@ -1,0 +1,4 @@
+# .gitattributes
+
+# Exclude node_modules directory from line ending normalization
+node_modules/* -text
