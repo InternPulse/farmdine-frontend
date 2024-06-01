@@ -1,6 +1,6 @@
 import CardData from "../CardData"
 import icon from "../assets/search-normal.svg"
-import HelpPageCard from "../components/HelpPageCard"
+import HelpPageCard from "../Components/HelpPageCard"
 import lady from "../assets/help-page-lady.png"
 
 const HelpPage = () => {
