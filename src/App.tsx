@@ -1,11 +1,5 @@
-import Messages from "./Components/Messages"
+export default function App() {
+	return <>
 
-const App: React.FC = () => {
-	return (
-		<>
-      		<Messages />
-		</>
-	)
+	</>
 }
-
-export default App
