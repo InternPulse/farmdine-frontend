@@ -1,9 +1,9 @@
-import Events from "./Components/Events"
+import Messages from "./Components/Messages"
 
 const App: React.FC = () => {
 	return (
 		<>
-      		<Events />
+      		<Messages />
 		</>
 	)
 }
