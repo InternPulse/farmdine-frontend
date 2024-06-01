@@ -1,15 +1,13 @@
-import React from 'react'
-import SignUpPage from './pages/SignUpPage'
-import SignUpSelectionPage from './pages/SignUpSelectionPage'
+import HomeSection from "./components/HomeSection"
+import Navbar from "./components/Navbar"
+import Product from "./pages/Product"
 
-const App: React.FC = () => {
+export default function App() {
 	return (
-		<div>
-			<h1 className="text-4xl text-center mt-8">FarmDine</h1>
-			<SignUpPage />
-			<SignUpSelectionPage />
-	</div>
-  )
+		<>
+			<Navbar />
+			<HomeSection />
+			<Product />
+		</>
+	)
 }
-
-export default App
