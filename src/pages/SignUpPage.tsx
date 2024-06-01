@@ -1,26 +1,27 @@
+import React from "react"
 import icon from "../assets/icon-question-mark.svg"
 import logo from "../assets/farm-dine-logo.svg"
 
-const SignUpPage = () => {
+const SignUpPage: React.FC = () => {
 	return (
 		<>
 			<div className='absolute'>
 				<img
 					src={logo}
 					alt='FarmDine logo'
-					className='w-24 h-24 relative top-5 left-16'
+					className='w-16 h-16 relative top-5 left-16'
 				/>
 			</div>
 
-			<div className='px-signup-padding py-40 min-h-svh bg-signup-form-background '>
-				<form className='bg-white  rounded-lg shadow-md font-openSans'>
+			<div className='flex justify-center mx-auto py-40 min-h-svh bg-gray-300 '>
+				<form className='bg-white max-w-3xl  rounded-lg shadow-md font-openSans'>
 					<div className='text-center text-sm mb-4 pt-4'>
-						<h1 className='text-form-gray'>
+						<h1 className='text-gray-400'>
 							Sign up as supplier
 							<span>
 								<a
 									href='#'
-									className='text-green0 underline decoration-green0 ml-2'
+									className='text-green0 underline decoration-green-500 ml-2'
 								>
 									Change
 								</a>
@@ -288,7 +289,7 @@ const SignUpPage = () => {
 							<h1>
 								Already have an account?
 								<span className='ml-2'>
-									<a href='#' className='text-green0'>
+									<a href='#' className='text-green-500'>
 										Log in
 									</a>
 								</span>

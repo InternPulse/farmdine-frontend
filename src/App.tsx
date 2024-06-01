@@ -1,11 +1,3 @@
-import Events from "./Components/Events"
-
-const App: React.FC = () => {
-	return (
-		<>
-      		<Events />
-		</>
-	)
+export default function App() {
+	return <></>
 }
-
-export default App
