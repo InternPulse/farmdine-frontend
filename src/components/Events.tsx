@@ -9,7 +9,7 @@ const eventData = [
   { id: 3, title: "Event 3", description: "Description of Event 3" },
 ];
 
-const Events: React.FC = (): React.ReactElement => {
+const Events = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const handleNext = () => {
@@ -21,11 +21,11 @@ const Events: React.FC = (): React.ReactElement => {
   };
 
   return (
-    <div className="flex justify-center items-center flex-col ml-3">
+    <div className="flex justify-center items-center flex-col ml-3 mt-20">
       <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
       <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br /> to celebrate, share, and innovate.</p>
 
-      <div className="relative w-full ml-4 my-20 h-screen text-white overflow-hidden bg-events-bg bg-no-repeat rounded">
+      <div className="relative w-full ml-4 my-20 h-screen text-white overflow-hidden bg-eventbg bg-no-repeat rounded">
         <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
           <div className="absolute w-3/5 text-left top-80 left-10">
             <h2 className="text-3xl font-semibold">{eventData[currentIndex].title}</h2>

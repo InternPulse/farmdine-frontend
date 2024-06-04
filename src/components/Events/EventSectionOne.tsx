@@ -1,7 +1,6 @@
-import React from 'react';
 import FarmDine from './FarmDine';
 
-const EventSectionOne: React.FC = () => {
+const EventSectionOne = () => {
   const imageUrl1 = 'src/assets/section1.png'; 
   const imageUrl2 = 'src/assets/section2.jpg';
   const imageIcon1 = 'src/assets/partners03.png';
