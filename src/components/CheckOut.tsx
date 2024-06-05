@@ -7,7 +7,7 @@ const CheckOut = () => {
             <div className="flex mb-6"><img className="w-4 h-5 mr-2 mt-1" src="src/assets/arrow-left.png" alt="left arrow"/><h1 className="font-semibold text-xl">Checkout</h1></div>
             <div>
                 <p>Payment Details</p>
-                <div className="flex space-x-16 my-4 justify-center items-center">
+                <div className="flex space-x-10 my-4 justify-center items-center">
                     <div className="bg-white border px-4 py-4"><img className="h-8 w-20" src="src/assets/logos_google-pay.jpg" alt="Visa pay logo"/></div>
                     <div className="bg-white border px-4 py-2"><img className="h-12 w-20" src="src/assets/logos_mastercard.jpg" alt="Google pay logo"/></div>
                     <div className="bg-white border px-4 py-4"><img className="h-8 w-20" src="src/assets/logos_visa.jpg" alt="Master card pay logo"/></div>
@@ -16,15 +16,15 @@ const CheckOut = () => {
             <form action="#">
                 <div>
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com"/>
+                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com"/>
                 </div>
                 <div>
                     <label htmlFor="name">Name on Card</label>
-                    <input type="text" name="name" id="name" placeholder="Aisha Stephanie" />
+                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="name" id="name" placeholder="Aisha Stephanie" />
                 </div>
                 <div>
                     <label htmlFor="card-number">Card Number</label>
-                    <div><img src="" alt=""/><input type="number" name="card-number" id="card-number" /></div>
+                    <div className="flex my-1 pl-2 rounded-md bg-white border border-slate-500"><img className="w-7 h-7 pt-1 mt-1 mr-4" src="src/assets/master-icon.jpg" alt="mastercard logo"/><input className="py-1 outline-none" type="text" name="card-number" id="card-number" placeholder="3563 8764 2453 092"/></div>
                 </div>
                 <div>
                     <div>
