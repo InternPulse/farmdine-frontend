@@ -3,14 +3,14 @@
 const CheckOut = () => {
   return (
     <div className="flex justify-center items-center">
-        <div className="bg-slate-100 w-[600px] p-10 rounded-lg">
-            <h1><img src="" alt="left arrow"/> Checkout</h1>
+        <div className="bg-slate-100 w-[600px] p-10 rounded-l-lg">
+            <h1><img className="w-5 h-5" src="src/assets/arrow-left.png" alt="left arrow"/> Checkout</h1>
             <div>
                 <p>Payment Details</p>
                 <div>
-                    <img src="" alt="Google pay logo"/>
-                    <img src="" alt="Visa pay logo"/>
-                    <img src="" alt="Master card pay logo"/>
+                    <img className="w-20 h-10" src="src/assets/logos_google-pay.jpg" alt="Visa pay logo"/>
+                    <img className="w-20 h-14" src="src/assets/logos_mastercard.jpg" alt="Google pay logo"/>
+                    <img className="w-20 h-10" src="src/assets/logos_visa.jpg" alt="Master card pay logo"/>
                 </div>
             </div>
             <form action="#">
