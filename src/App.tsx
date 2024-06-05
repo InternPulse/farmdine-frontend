@@ -5,6 +5,7 @@ import ProductSection from "./components/ProductSection"
 import Subscribe from "./components/Subscribe"
 import Events from "./components/Events"
 
+
 function App() {
 	return (
 		<>
