@@ -1,4 +1,3 @@
-import React from 'react';
 import googleLogo from '../assets/google.png';
 import appleLogo from '../assets/Apple.png';
 const Login: React.FC = () => {
