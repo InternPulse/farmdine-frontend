@@ -1,7 +1,10 @@
 import googleLogo from '../assets/google.png';
 import appleLogo from '../assets/Apple.png';
-const Login: React.FC = () => {
-    return (
+
+
+function Login() {
+  return (
+    <>
         <div className="flex justify-center items-center h-screen">
             <div className="bg-white p-8 rounded-lg shadow-md w-96">
                 <h1 className="text-2xl font-bold mb-6">Login to your account</h1>
@@ -34,7 +37,9 @@ const Login: React.FC = () => {
                 </div>
             </div>
         </div>
-    );
+    </>
+  )
 }
 
-export default Login;
+export default Login
+

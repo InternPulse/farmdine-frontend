@@ -5,7 +5,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				'eventbg': "url('src/assets/eventsbg.jpg')",
-			  }
+			}
 		},
 	},
 	plugins: [],
