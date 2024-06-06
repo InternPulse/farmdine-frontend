@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
             <div className="flex-col justify-start items-start gap-11 flex w-full">
               <div className="flex justify-between items-start gap-8 w-full">
                 <div className="flex-col justify-start items-start gap-2.5 flex w-full">
-                  <label htmlFor="firstName" className="text-stone-900/opacity-95 text-xl font-semibold font-['Roboto']">
+                  <label htmlFor="firstName" className="text-stone-900/opacity-95 text-xl font-semibold font-['Open Sans']">
                     First Name
                   </label>
                   <input
@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 <div className="flex-col justify-start items-start gap-2.5 flex w-full">
-                  <label htmlFor="lastName" className="text-stone-900 text-xl font-semibold font-['Roboto']">
+                  <label htmlFor="lastName" className="text-stone-900 text-xl font-semibold font-['Open Sans']">
                     Last Name
                   </label>
                   <input
@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <div className="flex-col justify-start items-start gap-2.5 flex w-full">
-                <label htmlFor="message" className="text-stone-900 text-xl font-semibold font-['Roboto']">
+                <label htmlFor="message" className="text-stone-900 text-xl font-semibold font-['Open Sans']">
                   Message
                 </label>
                 <textarea
