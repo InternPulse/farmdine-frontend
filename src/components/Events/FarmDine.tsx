@@ -24,7 +24,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
       <div className="flex items-center space-x-32 ml-32 mt-10">
         <div className="w-2/5"> 
         <img src={textIcon} alt="person icon" className="w-12 h-12" />
-          <h2 className="text-2xl font-semibold mb-4 tracking-wider">
+          <h2 className="text-2xl font-semibold mb-4">
             {title}
           </h2>
           <p className="text-gray-700 text-justify">{description}</p>
