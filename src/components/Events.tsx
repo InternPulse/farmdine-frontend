@@ -27,13 +27,16 @@ const Events = () => {
       <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
       <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br /> to celebrate, share, and innovate.</p>
 
-      <div className="relative w-full ml-4 my-10 h-screen text-white overflow-hidden bg-[url('../images/eventsbg.jpg')] bg-no-repeat rounded">
-        <div className="text-center p-6 transition-transform duration-500 ease-in-out transform">
+      <div className="relative w-full ml-4 my-10 h-screen text-white overflow-hidden rounded">
+        <img src="../images/eventsbg.jpg" alt="Event background image" className="absolute inset-0 object-cover w-full h-full z-0" />
+
+        <div className="text-center p-6 transition-transform duration-500 ease-in-out transform z-10">
           <div className="absolute w-3/5 text-left top-80 left-10">
             <h2 className="text-3xl font-semibold">{eventData[currentIndex].title}</h2>
             <p className="mt-8">{eventData[currentIndex].description}</p>
           </div>
         </div>
+
         <button
           onClick={handlePrev}
           className="absolute top-1/2 left-4 transform -translate-y-1/2 border rounded shadow focus:outline-none"
@@ -51,6 +54,7 @@ const Events = () => {
           <img src={sliderdots} alt="slider dots" />
         </div>
       </div>
+
 
       <EventSectionOne />
     </div>
