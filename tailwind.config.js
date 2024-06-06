@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'eventbg': "url('src/assets/eventsbg.jpg')",
+				'eventbg': "url('public/images/eventsbg.jpg')",
 			  }
 		},
 	},
