@@ -7,6 +7,7 @@ import whatsapp from "../assets/whatsapp.png"
 import Nigeria from "../assets/nigerian-flag.svg.png"
 import Ghana from "../assets/Ghana-flag.png"
 import USA from "../assets/USA.png"
+import logo from "../assets/farm-dine-logo.svg"
 
 const Footer = () => {
 	return (
@@ -15,11 +16,7 @@ const Footer = () => {
 				{/* First Column */}
 				<div>
 					<div className='flex items-center mb-4'>
-						<img
-							src='/src/assets/farm-dine-logo.svg'
-							className='h-10 w-10'
-							alt='Farmdine Logo'
-						/>
+						<img src={logo} className='h-10 w-10' alt='Farmdine Logo' />
 						<span className='ml-2 text-2xl font-bold'>FARMDINE</span>
 					</div>
 					<p>Sourcing Hub For Food Enterprises And African Farmers</p>
