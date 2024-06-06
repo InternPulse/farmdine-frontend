@@ -30,7 +30,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
           <p className="text-gray-700 text-justify">{description}</p>
           {buttonText && buttonOnClick && (
             <button
-              className="bg-green0 hover:bg-green-500 text-black text-xs font-bold py-2 px-4 rounded mt-4"
+              className="bg-lime-400 hover:bg-lime-500 text-black text-xs font-bold py-2 px-4 rounded mt-4"
               onClick={buttonOnClick}
             >
               {buttonText}
