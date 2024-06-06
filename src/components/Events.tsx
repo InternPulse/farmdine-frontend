@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import EventSectionOne from './Events/EventSectionOne';
+import rightarrow from '../assets/arrow-right-bold.png'; 
+import sliderdots from '../assets/slider-dots.png';
 
 
 // data for the carousel
@@ -42,11 +44,11 @@ const Events = () => {
           onClick={handleNext}
           className="absolute top-1/2 right-4 transform -translate-y-1/2 rounded focus:outline-none"
         >
-          <img src='src/assets/arrow-right-bold.png' alt="arrow right" />
+          <img src={rightarrow} alt="arrow right" />
         </button>
 
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
-          <img src='src/assets/slider-dots.png' alt="slider dots" />
+          <img src={sliderdots} alt="slider dots" />
         </div>
       </div>
 
