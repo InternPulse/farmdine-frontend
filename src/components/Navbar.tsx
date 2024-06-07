@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import navLogo1 from "../assets/nav-logo1.jpg"
 
 const Navbar = () => {
@@ -10,44 +11,44 @@ const Navbar = () => {
 					className='rounded-full ml-[60px]'
 				/>
 				<div className='flex justify-center space-x-8'>
-					<a
-						href='/'
+					<Link
+						to='/'
 						className='text-[#8bc34a] no-underline mr-12 leading-[1.6] hover:text-[#8bc34a]'
 					>
 						Home
-					</a>
-					<a
-						href='/'
+					</Link>
+					<Link
+						to='/productListing'
 						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
 					>
 						Product Listing
-					</a>
-					<a
-						href='/'
+					</Link>
+					<Link
+						to='/contact'
 						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
 					>
 						Contact
-					</a>
-					<a
-						href='/'
+					</Link>
+					<Link
+						to='/help'
 						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
 					>
 						Help
-					</a>
+					</Link>
 				</div>
 				<div className='flex items-center space-x-4'>
-					<a
-						href='/'
+					<Link
+						to='/login'
 						className='text-[#1e1e1e] no-underline hover:text-[#8bc34a]'
 					>
 						Log in
-					</a>
-					<a
-						href='/'
+					</Link>
+					<Link
+						to='/signup'
 						className='bg-[#8bc34a] text-[#1e1e1e] px-5 py-2 rounded cursor-pointer no-underline'
 					>
 						Sign Up
-					</a>
+					</Link>
 				</div>
 			</nav>
 		</div>
