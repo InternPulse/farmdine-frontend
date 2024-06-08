@@ -1,5 +1,5 @@
 import FarmDine from './FarmDine';
-import circletick from '../../../public/images/tick-circle.jpg';
+import circletick from '/images/tick-circle.jpg';
 
 const EventSectionOne = () => {
   const imageUrl1 = '../images/section1.png'; 
@@ -16,7 +16,7 @@ const EventSectionOne = () => {
         title={
           <>
             FarmDine: Revolutionizing Agricultural Trade with{' '}
-            <span className="text-orange-500">One-to-One <br></br> Online Connections</span>
+            <span className="text-orange-500">One-to-One Online Connections</span>
           </>
         }
         description={<> - Instant connections with potential buyers <br></br> - Real-time communication and negotiation <br></br>- Secure and seamless transactions <br></br> - Increased sales and growth </>}
@@ -30,7 +30,7 @@ const EventSectionOne = () => {
           title={
             <>
               FarmDine: Revolutionizing Agricultural Trade with{' '}
-              <span className="text-orange-500">One-to-One <br></br>Online </span> Payment Connections
+              <span className="text-orange-500">One-to-One Online </span> Payment Connections
             </>
           }
         description={<> - Instant connections with potential buyers <br></br> - Real-time communication and negotiation <br></br>- Secure and seamless transactions <br></br> - Increased sales and growth </>}

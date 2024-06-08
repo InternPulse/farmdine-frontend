@@ -27,7 +27,7 @@ const Events = () => {
       <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
       <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br /> to celebrate, share, and innovate.</p>
 
-      <div className="relative w-full ml-4 my-10 h-screen text-white overflow-hidden rounded">
+      <div className="relative w-[1050px] my-10 h-screen text-white overflow-hidden rounded-lg">
         <img src="../images/eventsbg.jpg" alt="Event background image" className="absolute inset-0 object-cover w-full h-full z-0" />
 
         <div className="text-center p-6 transition-transform duration-500 ease-in-out transform z-10">
