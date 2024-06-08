@@ -20,32 +20,32 @@ const FarmDine  = ({
   buttonOnClick,
 }: FarmDineProps ) => {
   return (
-    <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md h-screen mx-auto px-8 py-10">
-      <div className="flex items-center space-x-32 ml-32 mt-10">
-        <div className="w-2/5"> 
-        <img src={textIcon} alt="person icon" className="w-12 h-12" />
-          <h2 className="text-2xl font-semibold mb-4 tracking-wider">
-            {title}
-          </h2>
-          <p className="text-gray-700 text-justify">{description}</p>
-          {buttonText && buttonOnClick && (
-            <button
-              className="bg-green0 bg-lime-500 hover:bg-lime-600 text-black text-xs font-bold py-2 px-4 rounded mt-4"
-              onClick={buttonOnClick}
-            >
-              {buttonText}
-            </button>
-          )}
+    <div className="bg-gray-50 rounded-lg pl-20 shadow-md">
+      <div className="w-[1200px] flex items-center space-x-2 mb-10 pt-7 pb-12 pl-8">
+        <div className="w-2/4"> 
+          <img src={textIcon} alt="person icon" className="w-12 h-12" />
+            <h2 className="text-3xl font-semibold mb-4">
+              {title}
+            </h2>
+            <p className="text-gray-700 text-justify">{description}</p>
+            {buttonText && buttonOnClick && (
+              <button
+                className="bg-lime-400 hover:bg-lime-500 text-black text-xs font-bold py-2 px-4 rounded mt-4"
+                onClick={buttonOnClick}
+              >
+                {buttonText}
+              </button>
+            )}
         </div>
         <div>
-        <img src={imageIcon} alt="person icon" className="w-12 h-12 ml-96" />
-          <img
-            src={imageUrl}
-            alt={typeof title === 'string' ? title : 'FarmDine Image'}
-            width={400}
-            height={400}
-            className="object-cover"
-          />
+          <img src={imageIcon} alt="person icon" className="w-12 h-12 ml-96" />
+            <img
+              src={imageUrl}
+              alt={typeof title === 'string' ? title : 'FarmDine Image'}
+              width={400}
+              height={400}
+              className="object-cover"
+            />
         </div>
       </div>
     </div>
