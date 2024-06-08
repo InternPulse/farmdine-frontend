@@ -40,24 +40,24 @@ const CheckOut = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="email">Email Address</label>
-                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com" value={formData.email}/>
+                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com" value={formData.email} onChange={handleChange} required />
                 </div>
                 <div>
                     <label htmlFor="name">Name on Card</label>
-                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="name" id="name" placeholder="Aisha Stephanie" />
+                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="name" id="name" placeholder="Aisha Stephanie" value={formData.name} onChange={handleChange} required />
                 </div>
                 <div>
                     <label htmlFor="card-number">Card Number</label>
-                    <div className="flex my-1 pl-2 rounded-md bg-white border border-slate-500"><img className="w-7 h-7 pt-1 mt-1 mr-4" src={masterIcon} alt="mastercard logo"/><input className="py-1 outline-none" type="text" name="card-number" id="card-number" placeholder="3563 8764 2453 092"/></div>
+                    <div className="flex my-1 pl-2 rounded-md bg-white border border-slate-500"><img className="w-7 h-7 pt-1 mt-1 mr-4" src={masterIcon} alt="mastercard logo"/><input className="py-1 outline-none" type="text" name="card-number" id="card-number" placeholder="3563 8764 2453 092"  value={formData.cardNumber} onChange={handleChange} required/></div>
                 </div>
                 <div className="flex justify-between my-3">
                     <div>
                         <label htmlFor="date">Expire</label>
-                        <input className="block mt-1 px-4 py-1 rounded-md border outline-none border-slate-500" type="text" name="date" id="date" placeholder="05/2028" />
+                        <input className="block mt-1 px-4 py-1 rounded-md border outline-none border-slate-500" type="text" name="expireDate" id="date" placeholder="05/2028" value={formData.expireDate} onChange={handleChange} required/>
                     </div>
                     <div>
                         <label htmlFor="number">CVV</label>
-                        <input className="block mt-1 px-4 py-1 rounded-md border outline-none border-slate-500" type="number" name="number" id="number" placeholder="***" />
+                        <input className="block mt-1 px-4 py-1 rounded-md border outline-none border-slate-500" type="number" name="cvv" id="cvv" placeholder="***" value={formData.cvv} onChange={handleChange} required/>
                     </div>
                 </div>
                 <div className="flex justify-between mt-4 font-bold">
