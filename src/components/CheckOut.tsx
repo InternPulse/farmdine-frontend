@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import arrowLeft from 'src/assets/arrow-left.png';
 import googlePayLogo from 'src/assets/logos_google-pay.jpg';
 import visaLogo from 'src/assets/logos_visa.jpg';
@@ -6,6 +6,25 @@ import mastercardLogo from 'src/assets/logos_mastercard.jpg';
 import masterIcon from 'src/assets/master-icon.jpg';
 
 const CheckOut = () => {
+
+    const [formData, setFormData] = useState({
+        email: '',
+        name: '',
+        cardNumber: '',
+        expireDate: '',
+        cvv: ''
+    });
+
+    const handleChange = (e: { target: { name: any; value: any; }; }) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        console.log('Form Data Submitted:', formData);
+      };
+
   return (
     <div className="flex justify-center items-center">
         <div className="bg-slate-100 w-[600px] p-10 rounded-l-lg">
@@ -18,10 +37,10 @@ const CheckOut = () => {
                     <div className="bg-white border px-4 py-2"><img className="h-12 w-20" src={mastercardLogo} alt="Master card logo"/></div>
                 </div>
             </div>
-            <form action="#">
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="email">Email Address</label>
-                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com"/>
+                    <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="email" name="email" id="email" placeholder="aishastepahnie12@gmail.com" value={formData.email}/>
                 </div>
                 <div>
                     <label htmlFor="name">Name on Card</label>
