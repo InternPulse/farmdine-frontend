@@ -1,5 +1,5 @@
 import FarmDine from './FarmDine';
-import circletick from '../../../public/images/tick-circle.jpg';
+import circletick from '/images/tick-circle.jpg';
 
 const EventSectionOne = () => {
   const imageUrl1 = '../images/section1.png'; 
