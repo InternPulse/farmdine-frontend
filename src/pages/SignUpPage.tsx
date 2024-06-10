@@ -12,8 +12,8 @@ const SignUpPage = () => {
 				/>
 			</div>
 
-			<div className='flex justify-center mx-auto py-40 min-h-svh bg-gray-300 '>
-				<form className='bg-white max-w-3xl  rounded-lg shadow-md font-openSans'>
+			<div className='flex justify-center mx-auto py-40 min-h-svh bg-[#F6F6F6] '>
+				<form className='bg-white max-w-3xl rounded-lg shadow-md font-openSans'>
 					<div className='text-center text-sm mb-4 pt-4'>
 						<h1 className='text-gray-400'>
 							Sign up as supplier
@@ -279,7 +279,7 @@ const SignUpPage = () => {
 						<div className='mb-4'>
 							<button
 								type='submit'
-								className='w-full bg-form-gray opacity-60 font-semibold text-white py-2 px-4 rounded-lg hover:bg-gray-500'
+								className='w-full bg-[#A8A8A8] opacity-60 font-semibold text-white py-2 px-4 rounded-lg hover:bg-gray-500'
 							>
 								Sign in
 							</button>
