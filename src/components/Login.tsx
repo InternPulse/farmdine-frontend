@@ -3,8 +3,8 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { login } from '../services/apiService';
-import googleLogo from '../assets/google.png';
-import appleLogo from '../assets/Apple.png';
+import googleLogo from "../assets/images/google.png";
+import appleLogo from "../assets/images/Apple.png";
 
 const schema = z.object({
   email: z.string().min(1, 'Email or phone number is required'),

@@ -7,14 +7,10 @@ export const login = async (email: string, password: string) => {
     const response = await axios.post(`${BASE_URL}/accounts/login`, {
       email,
       password,
-    }, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
     });
     return response.data;
   } catch (error) {
-    console.error('Login API call failed:', error);
+    console.error('Login error:', error);
     throw error;
   }
 };
