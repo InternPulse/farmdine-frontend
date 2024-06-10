@@ -3,11 +3,12 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { login } from '../services/apiService';
-import googleLogo from "../assets/images/google.png";
-import appleLogo from "../assets/images/Apple.png";
+import googleLogo from "../assets/images/google.png"
+import appleLogo from "../assets/images/Apple.png"
+
 
 const schema = z.object({
-  email: z.string().min(1, 'Email or phone number is required'),
+  emailOrPhone: z.string().min(1, 'Email or phone number is required'),
   password: z.string().min(1, 'Password is required'),
 });
 
@@ -26,7 +27,7 @@ const Login: React.FC = () => {
     setError('');
 
     try {
-      const response = await login(data.email, data.password);
+      const response = await login(data.emailOrPhone, data.password);
       console.log('Login successful:', response);
       // Handle successful login (e.g., save token, redirect)
     } catch (error) {
@@ -42,15 +43,15 @@ const Login: React.FC = () => {
         <h1 className="text-2xl font-bold mb-6">Login to your account</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
-            <label htmlFor="email" className="block mb-1">Email or phone number</label>
+            <label htmlFor="emailOrPhone" className="block mb-1">Email or phone number</label>
             <input
               type="text"
-              id="email"
+              id="emailOrPhone"
               placeholder="Enter your email or phone number"
               className="border rounded px-3 py-2 w-full"
-              {...register('email')}
+              {...register('emailOrPhone')}
             />
-            {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+            {errors.emailOrPhone && <p className="text-red-500">{errors.emailOrPhone.message}</p>}
           </div>
           <div className="mb-4">
             <label htmlFor="password" className="block mb-1">Password</label>
