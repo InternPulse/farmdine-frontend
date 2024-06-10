@@ -5,7 +5,7 @@ import Login from "../components/Login"
 import Product from "../components/Product"
 import HelpPage from "../pages/HelpPage"
 import ContactPage from "../pages/ContactPage"
-// import SignUpPage from "../pages/SignUpPage"
+import SignUpPage from "../pages/SignUpPage"
 
 const router = createBrowserRouter([
 	{
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 			{ path: "productListing", element: <Product /> },
 			{ path: "help", element: <HelpPage /> },
 			{ path: "contact", element: <ContactPage /> },
-			// { path: "signup", element: <SignUpPage /> },
+			{ path: "signup", element: <SignUpPage /> },
 		],
 	},
 ])
