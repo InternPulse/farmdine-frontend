@@ -10,7 +10,7 @@ interface FarmDineProps {
   buttonOnClick?: () => void; // Optional button click handler
 }
 
-const FarmDine: React.FC<FarmDineProps> = ({
+const FarmDine  = ({
   title,
   description,
   imageUrl,
@@ -18,7 +18,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
   imageIcon,
   buttonText,
   buttonOnClick,
-}) => {
+}: FarmDineProps ) => {
   return (
     <div className="bg-gray-50 rounded-lg pl-20 shadow-md">
       <div className="w-[1200px] flex items-center space-x-2 mb-10 pt-7 pb-12 pl-8">

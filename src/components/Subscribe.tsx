@@ -1,6 +1,6 @@
 const Subscribe = () => {
 	return (
-		<div className='bg-gray-300'>
+		<div className='bg-gray-50'>
 			<div className=' max-w-4xl py-40 flex justify-center flex-col items-center mx-auto'>
 				<div className='bg-green-500  rounded-2xl border flex mx-auto justify-between items-center px-16 py-5 w-full'>
 					<h1 className='text-white font-semibold text-xl'>
