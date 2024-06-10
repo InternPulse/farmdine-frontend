@@ -5,23 +5,29 @@ import visaLogo from '/images/logos_visa.jpg';
 import mastercardLogo from '/images/logos_mastercard.jpg';
 import masterIcon from '/images/master-icon.jpg';
 
-// Define the type for form data
 interface FormData {
     email: string;
     name: string;
     cardNumber: string;
     expireDate: string;
     cvv: string;
+    phoneNumber: string;
+    address: string;
+    paymentAmount: string;
+    cartId: string;
 }
 
 const CheckOut = () => {
-    
     const [formData, setFormData] = useState<FormData>({
         email: '',
         name: '',
         cardNumber: '',
         expireDate: '',
-        cvv: ''
+        cvv: '',
+        phoneNumber: '',
+        address: '',
+        paymentAmount: '',
+        cartId: ''
     });
 
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -51,6 +57,18 @@ const CheckOut = () => {
         } else if (formData.cvv.length !== 3) {
             newErrors.cvv = 'CVV must be 3 digits';
         }
+        if (!formData.phoneNumber) {
+            newErrors.phoneNumber = 'Phone number is required';
+        }
+        if (!formData.address) {
+            newErrors.address = 'Address is required';
+        }
+        if (!formData.paymentAmount) {
+            newErrors.paymentAmount = 'Payment amount is required';
+        }
+        if (!formData.cartId) {
+            newErrors.cartId = 'Cart ID is required';
+        }
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -59,32 +77,48 @@ const CheckOut = () => {
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        if (!validateForm()) return; 
+        if (!validateForm()) return; // Exit if validation fails
 
-        setIsLoading(true); 
+        setIsLoading(true); // Show loading indicator
 
         try {
-            
-            const response = await fetch('https://your-payment-gateway.com/process', {
+            const response = await fetch('https://farmdine-backend.onrender.com/api/v1/payments/make-payment', {
                 method: 'POST',
-                body: JSON.stringify(formData),
                 headers: {
-                    'Content-Type': 'application/json'
-                }
-                
+                    'accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': 'XM7iBZ1G9Icc09S6CDsJ5tIhj8R58OgaH5tWY4B1Q3DZxf5W3PrKbNCOjVkaWNnz'
+                },
+                body: JSON.stringify({
+                    cart_id: formData.cartId,
+                    cart: {
+                        items: [
+                            {
+                                cart: "3fa85f64-5717-4562-b3fc-2c963f66afa6", // Replace with actual cart ID
+                                quantity: 1, // Replace with actual quantity
+                                item_total_price: "50.00" // Replace with actual item total price
+                            }
+                        ],
+                        total_price: formData.paymentAmount
+                    },
+                    email: formData.email,
+                    phone_number: formData.phoneNumber,
+                    address: formData.address,
+                    payment_amount: formData.paymentAmount
+                })
             });
 
             if (response.ok) {
-                console.log('Payment successful!'); 
+                console.log('Payment successful!'); // Handle success scenario (e.g., redirect)
             } else {
                 console.error('Payment failed:', await response.text());
-               
+                // Display error message to user
             }
         } catch (error) {
             console.error('Error processing payment:', error);
-            
+            // Display generic error message to user
         } finally {
-            setIsLoading(false); 
+            setIsLoading(false); // Hide loading indicator
         }
     };
 
@@ -133,6 +167,26 @@ const CheckOut = () => {
                             <input className="block mt-1 px-4 py-1 rounded-md border outline-none border-slate-500" type="number" name="cvv" id="cvv" placeholder="***" value={formData.cvv} onChange={handleChange} required />
                             {errors.cvv && <p className="text-red-500">{errors.cvv}</p>}
                         </div>
+                    </div>
+                    <div>
+                        <label htmlFor="phoneNumber">Phone Number</label>
+                        <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="phoneNumber" id="phoneNumber" placeholder="123-456-7890" value={formData.phoneNumber} onChange={handleChange} required />
+                        {errors.phoneNumber && <p className="text-red-500">{errors.phoneNumber}</p>}
+                    </div>
+                    <div>
+                        <label htmlFor="address">Address</label>
+                        <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="address" id="address" placeholder="123 Main St" value={formData.address} onChange={handleChange} required />
+                        {errors.address && <p className="text-red-500">{errors.address}</p>}
+                    </div>
+                    <div>
+                        <label htmlFor="paymentAmount">Payment Amount</label>
+                        <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="paymentAmount" id="paymentAmount" placeholder="$50.00" value={formData.paymentAmount} onChange={handleChange} required />
+                        {errors.paymentAmount && <p className="text-red-500">{errors.paymentAmount}</p>}
+                    </div>
+                    <div>
+                        <label htmlFor="cartId">Cart ID</label>
+                        <input className="block w-full my-1 pl-2 rounded-md py-1 border outline-none border-slate-500" type="text" name="cartId" id="cartId" placeholder="12345" value={formData.cartId} onChange={handleChange} required />
+                        {errors.cartId && <p className="text-red-500">{errors.cartId}</p>}
                     </div>
                     <div className="flex justify-between mt-4 font-bold">
                         <p>Shipping</p>
