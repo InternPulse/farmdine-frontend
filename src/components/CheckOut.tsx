@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import arrowLeft from 'src/assets/arrow-left.png';
-import googlePayLogo from 'src/assets/logos_google-pay.jpg';
-import visaLogo from 'src/assets/logos_visa.jpg';
-import mastercardLogo from 'src/assets/logos_mastercard.jpg';
-import masterIcon from 'src/assets/master-icon.jpg';
+import arrowLeft from '/images/arrow-left.png';
+import googlePayLogo from '/images/logos_google-pay.jpg';
+import visaLogo from '/images/logos_visa.jpg';
+import mastercardLogo from '/images/logos_mastercard.jpg';
+import masterIcon from '/images/master-icon.jpg';
 
 const CheckOut = () => {
 
