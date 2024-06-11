@@ -2,7 +2,7 @@ const Subscribe = () => {
 	return (
 		<div>
 			<div className=' max-w-4xl py-40 flex justify-center flex-col items-center mx-auto'>
-				<div className='bg-lime-500  rounded-2xl border flex mx-auto justify-between items-center px-16 py-5 w-full'>
+				<div className='bg-subscribebg  rounded-2xl border flex mx-auto justify-between items-center px-16 py-5 w-full'>
 					<h1 className='text-white font-semibold text-xl'>
 						Can't find the answer you are looking for?
 					</h1>
