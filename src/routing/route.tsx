@@ -6,6 +6,7 @@ import Product from "../components/Product"
 import HelpPage from "../pages/HelpPage"
 import ContactPage from "../pages/ContactPage"
 import SignUpPage from "../pages/SignUpPage"
+import Dashboard from "../pages/Dashboard"
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,8 @@ const router = createBrowserRouter([
 			{ path: "help", element: <HelpPage /> },
 			{ path: "contact", element: <ContactPage /> },
 			{ path: "signup", element: <SignUpPage /> },
+			{ path: "dashboard", element: <Dashboard />},
+			{ path: "*", element: <div>Page Not Found</div>},
 		],
 	},
 ])
