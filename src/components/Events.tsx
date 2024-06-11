@@ -24,7 +24,7 @@ const Events = () => {
 
   return (
     <div className="flex justify-center items-center flex-col ml-3 mt-20">
-      <h1 className="inline-block rounded-full bg-green-100 text-green-400 text-center mt-1 px-5 py-2 text-xs">Events</h1>
+      <h1 className="inline-block rounded-full bg-lime-100 text-lime-500 font-medium text-center mt-1 px-5 py-2 text-sm">Events</h1>
       <p className="text-center mt-4 text-3xl">Farming events unite the agricultural community <br /> to celebrate, share, and innovate.</p>
 
       <div className="relative w-[1050px] my-10 h-screen text-white overflow-hidden rounded-lg">

@@ -42,7 +42,7 @@ const ProductSection: React.FC = () => {
       <div className='flex justify-center mb-8'>
         <div className='relative'>
           <div className='bg-lime-100 rounded-full flex items-center justify-center'>
-            <h1 className='text-sm px-4 py-1 font-semibold text-lime-500'>Products</h1>
+            <h1 className='text-sm px-4 py-1 font-medium text-lime-500'>Products</h1>
           </div>
         </div>
       </div>
