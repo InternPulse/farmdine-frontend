@@ -41,8 +41,8 @@ const ProductSection: React.FC = () => {
     <section id='product-section' className='text-center py-12'>
       <div className='flex justify-center mb-8'>
         <div className='relative'>
-          <div className='w-18 h-18 border-2 border-lime-100 bg-lime-100 rounded-full flex items-center justify-center p-2'>
-            <h1 className='text-lg font-bold text-green-500'>Products</h1>
+          <div className='bg-lime-100 rounded-full flex items-center justify-center'>
+            <h1 className='text-sm px-4 py-1 font-semibold text-lime-500'>Products</h1>
           </div>
         </div>
       </div>
@@ -51,26 +51,16 @@ const ProductSection: React.FC = () => {
       </p>
       <div className='flex justify-center flex-wrap gap-6'>
         {displayedProducts.map((product, index) => (
-          <div
-            key={product.id}
-            className='bg-gray-200 p-6 rounded-lg w-40 text-center hover:scale-105 transition-transform'
-          >
-            <img
-              src={product.image}
-              alt={`Product ${product.id}`}
-              className='w-full h-full object-cover'
-            />
-            {index === 3 && !showMore && products.length > 4 && (
-              <div className='mt-8'>
-                <button
-                  onClick={handleShowMore}
-                  className='bg-lime-500 text-white px-4 py-2 rounded-lg'
-                >
-                  Show More
-                </button>
-              </div>
-            )}
-          </div>
+          	<div
+				key={product.id}
+				className='bg-gray-50 p-2 rounded-lg w-52 h-52 text-center hover:scale-105 transition-transform'
+				>
+				<img
+				src={product.image}
+				alt={`Product ${product.id}`}
+				className='w-full h-full object-cover'
+				/>
+            </div>
         ))}
       </div>
     </section>
