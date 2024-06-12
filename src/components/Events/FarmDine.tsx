@@ -20,7 +20,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
   buttonOnClick,
 }) => {
   return (
-    <div className="bg-gray-50 rounded-lg pl-20 shadow-md">
+    <div className="bg-gray-50 rounded-lg pl-20 shadow-sm">
       <div className="w-[1200px] flex items-center space-x-2 mb-10 pt-7 pb-12 pl-8">
         <div className="w-2/4"> 
           <img src={textIcon} alt="person icon" className="w-12 h-12" />
@@ -30,7 +30,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
             <p className="text-gray-700 text-justify">{description}</p>
             {buttonText && buttonOnClick && (
               <button
-                className="bg-lime-400 hover:bg-lime-500 text-black text-xs font-bold py-2 px-4 rounded mt-4"
+                className="bg-lime-500 hover:bg-lime-400 text-black text-xs font-bold py-2 px-4 rounded mt-4"
                 onClick={buttonOnClick}
               >
                 {buttonText}

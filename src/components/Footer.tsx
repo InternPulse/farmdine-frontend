@@ -11,8 +11,8 @@ import logo from "../assets/farm-dine-logo.svg"
 
 const Footer = () => {
 	return (
-		<footer className='bg-white text-black py-10'>
-			<div className='container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8'>
+		<footer className='bg-white text-black py-10 pl-10 mr-8'>
+			<div className='container border-b-2 pb-8 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8'>
 				{/* First Column */}
 				<div>
 					<div className='flex items-center mb-4'>

@@ -5,8 +5,9 @@ export default {
 		extend: {
 			backgroundImage: {
 				'eventbg': "url('public/images/eventsbg.jpg')",
-			  }
-		},
+				'subscribebg': "url('public/images/subscribebg.png')"
+			},
+		}
 	},
 	plugins: [],
 }
