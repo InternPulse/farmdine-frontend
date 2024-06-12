@@ -15,31 +15,10 @@ const TestimonialSection: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 testimonials-container">
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-bold mb-4"
-                style={{
-                  fontFamily: "Roboto",
-                  fontSize: "20px",
-                  color: "#1E1E1E",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
                 Tunde Badmus
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
                 FarmDine has transformed my farm. Now, I can reach buyers who
                 value locally grown, organic produce. The platform showcases my
                 authenticity, ensuring steady sales and supporting sustainable
@@ -50,30 +29,10 @@ const TestimonialSection: React.FC = () => {
 
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-roboto font-medium text-base mb-4"
-                style={{
-                  color: "#1E1E1E",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
-                Chioma wheeler
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
+                Chioma Wheeler
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
                 FarmDine catapulted my homemade food business to new heights.
                 With their platform, I expanded distribution while preserving
                 recipe integrity. A game-changer for passionate small producers
@@ -84,64 +43,23 @@ const TestimonialSection: React.FC = () => {
 
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-roboto font-medium text-base mb-4"
-                style={{
-                  color: "#1E1E1E",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
                 Aisha Ngozi
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
-                Timely supply and affordable prices, It is good to do
-                businessThanks to FarmDine, ingredient sourcing for my
-                restaurant is effortless. No more endless searches or quality
-                concerns.
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
+                Timely supply and affordable prices, It is good to do business
+                Thanks to FarmDine, ingredient sourcing for my restaurant is
+                effortless. No more endless searches or quality concerns.
               </p>
             </div>
           </div>
 
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-roboto font-medium text-base mb-4"
-                style={{
-                  color: "#1E1E1E",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
                 Tunde Badmus
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
                 FarmDine has transformed my farm. Now, I can reach buyers who
                 value locally grown, organic produce. The platform showcases my
                 authenticity, ensuring steady sales and supporting sustainable
@@ -152,30 +70,10 @@ const TestimonialSection: React.FC = () => {
 
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-roboto font-medium text-base mb-4"
-                style={{
-                  color: "#1E1E1E",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
-                Chioma wheeler
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
+                Chioma Wheeler
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
                 FarmDine catapulted my homemade food business to new heights.
                 With their platform, I expanded distribution while preserving
                 recipe integrity. A game-changer for passionate small producers
@@ -186,34 +84,13 @@ const TestimonialSection: React.FC = () => {
 
           <div className="p-testimonials bg-testimonialsBg rounded-testimonials shadow-testimonials backdrop-blur-testimonials h-auto">
             <div className="flex flex-col justify-center">
-              <h3
-                className="text-gray-600 font-roboto font-medium text-base mb-4"
-                style={{
-                  color: "#1E1E1E",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  lineHeight: "23.913px",
-                }}
-              >
+              <h3 className="text-[#1E1E1E] font-roboto font-medium text-[20px] leading-[23.913px] mb-4">
                 Aisha Ngozi
               </h3>
-              <p
-                className="text-gray-800 text-lg mb-4"
-                style={{
-                  alignSelf: "stretch",
-                  color: "#1E1E1E",
-                  fontFamily: "Open Sans",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "25px",
-                }}
-              >
-                Timely supply and affordable prices, It is good to do
-                businessThanks to FarmDine, ingredient sourcing for my
-                restaurant is effortless. No more endless searches or quality
-                concerns.
+              <p className="text-[#1E1E1E] font-openSans text-[18px] font-normal leading-[25px] mb-4">
+                Timely supply and affordable prices, It is good to do business
+                Thanks to FarmDine, ingredient sourcing for my restaurant is
+                effortless. No more endless searches or quality concerns.
               </p>
             </div>
           </div>
