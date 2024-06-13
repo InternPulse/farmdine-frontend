@@ -16,10 +16,10 @@ export default {
 				  '0%': { transform: 'translateX(100%)', opacity: '0' },
 				  '100%': { transform: 'translateX(0)', opacity: '1' },
 				},
-			  },
-			  animation: {
+			},
+			animation: {
 				slideInLeft: 'slideInLeft 1s forwards',
-				slideInRight: 'slideInRight 1s forwards',
+				slideInRight: 'slideInRight 3s forwards',
 			},
 		}
 	},

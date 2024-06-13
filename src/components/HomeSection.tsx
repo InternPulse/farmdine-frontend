@@ -1,7 +1,28 @@
+import { useEffect } from 'react';
 import arrow from "../assets/arrow-right.png"
 import homeSection from "../assets/HomeSection.jpg"
 
 const HomeSection = () => {
+	useEffect(() => {
+			const handleScroll = () => {
+			const elements = document.querySelectorAll('.left-slide-in, .right-slide-in');
+			elements.forEach(el => {
+			const rect = el.getBoundingClientRect();
+			if (rect.top < window.innerHeight && rect.bottom > 0) {
+				if (el.classList.contains('left-slide-in')) {
+					el.classList.add('animate-slideInLeft');
+				} else if (el.classList.contains('right-slide-in')) {
+					el.classList.add('animate-slideInRight');
+				}
+			}
+		});
+	};
+
+	window.addEventListener('scroll', handleScroll);
+	handleScroll(); 
+	return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
 		<div className='container mx-auto pb-9'>
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-20 px-24'>
