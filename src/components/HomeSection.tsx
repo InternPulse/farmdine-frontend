@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import arrow from "../assets/arrow-right.png"
 import homeSection from "../assets/HomeSection.jpg"
 
@@ -23,6 +24,12 @@ const HomeSection = () => {
 	return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
+	const navigate = useNavigate();
+
+    const changeToSignup = () => {
+        navigate('/signup');
+    };
+
 	return (
 		<div className='container mx-auto pb-9'>
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-20 px-24'>
@@ -35,7 +42,7 @@ const HomeSection = () => {
 						collaborations.
 					</h1>
 
-					<button className='flex items-center align-baseline my-7 px-2.5 py-2.5 bg-lime-500 hover:bg-lime-400 gap-2 text-black text-sm font-medium rounded-lg'>
+					<button onClick={changeToSignup} className='flex items-center align-baseline my-7 px-2.5 py-2.5 bg-lime-500 hover:bg-lime-400 gap-2 text-black text-sm font-medium rounded-lg'>
 						Get started <img src={arrow} alt='' className='w-6 h-6' />
 					</button>
 				</div>
