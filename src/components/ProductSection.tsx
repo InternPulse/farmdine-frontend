@@ -45,15 +45,15 @@ const ProductSection: React.FC = () => {
       id='Product_listing_pg'
       className='text-center py-12 w-full relative pb-48'
       style={{ 
-        width: '100%', // Full width
-        minHeight: '100vh', // Full viewport height
-        backgroundColor: '#F5F5F5', // Updated background color
-        position: 'relative', // Ensure relative positioning for absolutely positioned elements
-        overflow: 'hidden' // Prevent content overflow
+        width: '100%', 
+        minHeight: '100vh', 
+        backgroundColor: '#F5F5F5',
+        position: 'relative', 
+        overflow: 'hidden' 
       }}
     >
       <div className="container mx-auto relative">
-        <h1 className="text-lg font-bold text-green-500 mb-8">Products</h1>
+	  <h1 className="inline-block rounded-full bg-lime-100 text-lime-500 font-medium text-center mt-1 px-5 py-2 text-sm">Products</h1>
         <p className='text-xl mb-8'>
           Providing the operational support your food business needs
         </p>
@@ -63,24 +63,24 @@ const ProductSection: React.FC = () => {
               key={product.id}
               className={`bg-gray-200 p-6 rounded-lg shadow-lg mb-6 relative`}
               style={{
-                width: 'calc(25% - 20px)', // Adjusted width per product with gap
-                height: '482.93px', // Fixed height per product
-                borderRadius: index === 0 ? '6.62px 0px 0px 6.62px' : '0px 6.62px 6.62px 0px', // Adjusted border-radius per product
-                backgroundColor: '#F6F6F6', // Updated background color
+                width: 'calc(25% - 20px)', 
+                height: '482.93px', 
+                borderRadius: index === 0 ? '6.62px 0px 0px 6.62px' : '0px 6.62px 6.62px 0px', 
+                backgroundColor: '#F6F6F6', 
                 boxShadow: '0px 2.65px 2.65px 0px #B0B0B080, 2.65px 0px 5.16px 0px #DDDDDD26, 0px 1.32px 2.65px 0px #BFBFBF0A, 2px -2px 4px 0px #D1D1D140', // Updated box shadows
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: '0px' // Gap between the elements inside each product card
+                gap: '0px' 
               }}
             >
               <img
                 src={product.image}
                 alt={`Product ${product.id}`}
                 style={{
-                  width: '304.97px', // Fixed width
-                  height: '304.97px', // Fixed height
-                  objectFit: 'cover' // Ensure image covers the given width and height
+                  width: '304.97px', 
+                  height: '304.97px', 
+                  objectFit: 'cover' 
                 }}
               />
               <div style={{ textAlign: 'center', width: '100%' }}>
