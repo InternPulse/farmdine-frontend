@@ -54,7 +54,7 @@ type FormData = z.infer<typeof schema>
 
 const SignUpPage = () => {
 	const [countryid, setCountryid] = useState(0)
-	const [stateid, setStateid] = useState(0)
+	// const [stateid, setStateid] = useState(0)
 	const [cityid, setCityid] = useState(0)
 
 	const [countriesList, setCountriesList] = useState<any[]>([])
@@ -372,7 +372,7 @@ const SignUpPage = () => {
 										{...register("state", {
 											onChange: (e) => {
 												const state = stateList[e.target.value]
-												setStateid(state.id)
+												// setStateid(state.id)
 												GetCity(countryid, state.id).then((result: any) => {
 													setCityList(result)
 												})
