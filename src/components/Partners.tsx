@@ -1,5 +1,12 @@
 // src/Partners.tsx
 import React, { useEffect, useRef } from 'react';
+import image1 from '../assets/img1.png';
+import image2 from '../assets/img2.png';
+import image3 from '../assets/img3.png';
+import image4 from '../assets/img4.png';
+import image5 from '../assets/img5.png';
+
+
 
 const Partners: React.FC = () => {
   const logosRef = useRef<HTMLDivElement>(null);
@@ -35,20 +42,20 @@ const Partners: React.FC = () => {
             className="flex space-x-8"
             style={{ width: '200%', overflow: 'hidden', whiteSpace: 'nowrap' }}
            >
-            <img src="src\assets\img1.png" alt="Logo 1" className="h-26 w-26" />
-            <img src="src\assets\img2.png" alt="Logo 2" className="h-26 w-26" />
-            <img src="src\assets\img3.png" alt="Logo 3" className="h-26 w-26" />
-            <img src="src\assets\img4.png" alt="Logo 4" className="h-26 w-26" />
-            <img src="src\assets\img5.png" alt="Logo 5" className="h-26 w-26" />
-            {/* Repeat logos for continuous scroll effect */}
-            <img src="src\assets\img1.png" alt="Logo 1" className="h-26 w-26" />
-            <img src="src\assets\img2.png" alt="Logo 2" className="h-26 w-26" />
-            <img src="src\assets\img3.png" alt="Logo 3" className="h-26 w-26" />
-            <img src="src\assets\img4.png" alt="Logo 4" className="h-26 w-26" />
-            <img src="src\assets\img5.png" alt="Logo 5" className="h-26 w-26" />
-            <img src="src\assets\img1.png" alt="Logo 1" className="h-26 w-26" />
-            <img src="src\assets\img2.png" alt="Logo 2" className="h-26 w-26" />
-            <img src="src\assets\img3.png" alt="Logo 3" className="h-26 w-26" />
+            <img src={image1} alt="Logo 1" className="h-26 w-26" />
+            <img src={image2} alt="Logo 2" className="h-26 w-26" />
+            <img src={image3} alt="Logo 3" className="h-26 w-26" />
+            <img src={image4} alt="Logo 4" className="h-26 w-26" />
+            <img src={image5} alt="Logo 5" className="h-26 w-26" />
+            {/* scroll effect */}
+            <img src={image2} alt="Logo 1" className="h-26 w-26" />
+            <img src={image1} alt="Logo 2" className="h-26 w-26" />
+            <img src={image4} alt="Logo 3" className="h-26 w-26" />
+            <img src={image2} alt="Logo 4" className="h-26 w-26" />
+            <img src={image5} alt="Logo 5" className="h-26 w-26" />
+            <img src={image3} alt="Logo 1" className="h-26 w-26" />
+            <img src={image4} alt="Logo 2" className="h-26 w-26" />
+            <img src={image1} alt="Logo 3" className="h-26 w-26" />
           </div>
         </div>
       </div>
