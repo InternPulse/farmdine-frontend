@@ -16,7 +16,7 @@ const ProductSection: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://farmdine-backend.onrender.com/api/v1/products/list");
+      const response = await axios.get("https://farmdine-backend.onrender.com/api/v1/products/");
       console.log('API Response:', response.data); // Log the response to check its structure
 
       // Extract products from the 'results' key
