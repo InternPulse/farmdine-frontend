@@ -36,7 +36,7 @@ const Events = () => {
         <img src="../images/eventsbg.jpg" alt="Event background image" className="absolute inset-0 object-cover w-full h-full z-0" />
 
         <div className="text-center p-6 transition-transform duration-500 ease-in-out transform z-10">
-          <div className="absolute w-full md:w-3/5 text-left top-1/2 md:top-80 left-4 md:left-10 transform -translate-y-1/2 md:translate-y-0">
+          <div className="absolute w-full md:w-3/5 text-left top-60 md:top-80 left-4 md:left-10 transform -translate-y-1/2 md:translate-y-0">
             <h2 className="text-2xl md:text-3xl font-semibold">{eventData[currentIndex].title}</h2>
             <p className="mt-4 md:mt-8 text-sm md:text-base">{eventData[currentIndex].description}</p>
           </div>
