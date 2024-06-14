@@ -16,6 +16,7 @@ const Navbar = () => {
 				<img
 					src={navLogo1}
 					alt='Company Logo'
+					
 					className='rounded-full'
 				/>
 				<div className='hidden md:flex justify-center space-x-8'>
