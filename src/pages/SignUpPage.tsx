@@ -1,5 +1,5 @@
 // import icon from "../assets/icon-question-mark.svg"
-import logo from "../assets/farm-dine-logo.svg"
+// import logo from "../assets/farm-dine-logo.svg"
 import { SubmitHandler, useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js"
@@ -82,13 +82,13 @@ const SignUpPage = () => {
 
 	return (
 		<>
-			<div className='absolute'>
+			{/* <div className='absolute'>
 				<img
 					src={logo}
 					alt='FarmDine logo'
 					className='w-16 h-16 relative top-5 left-16'
 				/>
-			</div>
+			</div> */}
 
 			<div className='flex justify-center mx-auto py-40 min-h-svh bg-gray-300 '>
 				<form
