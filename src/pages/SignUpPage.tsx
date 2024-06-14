@@ -4,44 +4,47 @@ import { SubmitHandler, useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js"
 import { GetCountries, GetState, GetCity } from "react-country-state-city"
-// import GetState from "react-country-state-city"
-// import GetCity from "react-country-state-city"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
 const SupplyCategories = ["Wholesales", "Retails"] as const
 
 const schema = z.object({
-	firstName: z
+	first_name: z
 		.string()
 		.min(3, { message: "Name must be at least 3 characters" }),
-	lastName: z
+	last_name: z
 		.string()
 		.min(3, { message: "Last name must be at least 3 characters" }),
-	businessName: z
+	business_name: z
 		.string()
 		.min(3, { message: "Business name must be at least 3 characters" }),
-	business: z.string().min(3).optional().or(z.literal("")),
+	username: z.string().min(3),
 	supplyCategory: z.enum(SupplyCategories, {
 		errorMap: () => ({ message: "Category is required" }),
 	}),
 	phoneCode: z.string().min(2, { message: "Select Code" }),
-	phoneNumber: z
+	phone_number: z
 		.number({ invalid_type_error: "Enter a valid phone number" })
 		.min(6),
 	email: z.string().min(6, { message: "Email is required" }).email({
 		message: "Must be a valid email",
 	}),
-	businessAddress: z
+	restaurant_address: z
 		.string()
 		.min(10, { message: "Enter a valid business address" }),
 	country: z.string().min(1, { message: "Select a country" }),
 	state: z.string().min(1, { message: "Select a state" }),
-	city: z.string().min(1, { message: "Select a city" }),
+	city: z
+		.string()
+		.min(1, { message: "Select a city" })
+		.optional()
+		.or(z.literal("")),
 	vicinity: z.string().min(3, { message: "Enter a vicinity" }),
 	password: z
 		.string()
-		.min(6, { message: "Password must be at least 6 characters" }),
+		.min(8, { message: "Password must be at least 8 characters" }),
 	checkbox: z.literal(true, {
 		errorMap: () => ({ message: "You must accept Terms and Conditions" }),
 	}),
@@ -67,19 +70,22 @@ const SignUpPage = () => {
 	const {
 		register,
 		handleSubmit,
-		formState: { errors },
+		reset,
+		formState: { errors, isSubmitting },
 	} = useForm<FormData>({ resolver: zodResolver(schema) })
 
-	const onSubmit: SubmitHandler<FormData> = async (data) => {
-		try {
-			await axios.post(
+	const navigate = useNavigate()
+
+	const onSubmit: SubmitHandler<FormData> = (data) => {
+		axios
+			.post(
 				"https://farmdine-backend.onrender.com/api/v1/accounts/register-restaurant",
 				data
 			)
-		} catch (error) {
-			console.log(error)
-			//todo
-		}
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err))
+		reset()
+		navigate("/login")
 	}
 
 	return (
@@ -127,11 +133,11 @@ const SignUpPage = () => {
 									id='first-name'
 									placeholder='First Name'
 									className='w-full h-12 px-3 py-2 border rounded-lg'
-									{...register("firstName")}
+									{...register("first_name")}
 								/>
-								{errors.firstName && (
+								{errors.first_name && (
 									<p className='text-xs text-red-600'>
-										{errors.firstName.message}
+										{errors.first_name.message}
 									</p>
 								)}
 							</div>
@@ -148,11 +154,11 @@ const SignUpPage = () => {
 									id='last-name'
 									placeholder='Last Name'
 									className='w-full h-12 px-3 py-2 border rounded-lg'
-									{...register("lastName")}
+									{...register("last_name")}
 								/>
-								{errors.lastName && (
+								{errors.last_name && (
 									<p className='text-xs text-red-600'>
-										{errors.lastName.message}
+										{errors.last_name.message}
 									</p>
 								)}
 							</div>
@@ -177,11 +183,11 @@ const SignUpPage = () => {
 									id='business-name'
 									placeholder='Registered Business Name'
 									className='w-full px-3 h-12 py-2 border rounded-lg'
-									{...register("businessName")}
+									{...register("business_name")}
 								/>
-								{errors.businessName && (
+								{errors.business_name && (
 									<p className='text-xs text-red-600'>
-										{errors.businessName.message}
+										{errors.business_name.message}
 									</p>
 								)}
 							</div>
@@ -192,19 +198,19 @@ const SignUpPage = () => {
 								className='block text-gray-700 text-sm mb-2'
 								htmlFor='business'
 							>
-								Business Name (If different from Registered Business Name)
+								Username
 							</label>
 
 							<input
 								type='text'
 								id='business'
-								placeholder='Business Name'
+								placeholder='Username'
 								className='w-full px-3 h-12 py-2 border rounded-lg'
-								{...register("business")}
+								{...register("username")}
 							/>
-							{errors.business && (
+							{errors.username && (
 								<p className='text-xs text-red-600'>
-									{errors.business.message}
+									{errors.username.message}
 								</p>
 							)}
 						</div>
@@ -250,11 +256,11 @@ const SignUpPage = () => {
 								id='business-address'
 								placeholder='Supplier Address'
 								className='w-full px-3 h-12 py-2 border rounded-lg'
-								{...register("businessAddress")}
+								{...register("restaurant_address")}
 							/>
-							{errors.businessAddress && (
+							{errors.restaurant_address && (
 								<p className='text-xs text-red-600'>
-									{errors.businessAddress.message}
+									{errors.restaurant_address.message}
 								</p>
 							)}
 						</div>
@@ -307,11 +313,11 @@ const SignUpPage = () => {
 									id='phone-number'
 									type='number'
 									placeholder='Phone Number'
-									{...register("phoneNumber", { valueAsNumber: true })}
+									{...register("phone_number", { valueAsNumber: true })}
 								/>
-								{errors.phoneNumber && (
+								{errors.phone_number && (
 									<p className='text-xs text-red-600'>
-										{errors.phoneNumber.message}
+										{errors.phone_number.message}
 									</p>
 								)}
 							</div>
@@ -378,7 +384,7 @@ const SignUpPage = () => {
 									>
 										<option value=''>Select State</option>
 										{stateList.map((item, index) => (
-											<option key={index} value={stateid}>
+											<option key={index} value={index}>
 												{item.name}
 											</option>
 										))}
@@ -493,9 +499,10 @@ const SignUpPage = () => {
 						<div className='mb-4'>
 							<button
 								type='submit'
+								disabled={isSubmitting}
 								className='w-full bg-[#A8A8A8] opacity-60 font-semibold text-white py-2 px-4 rounded-lg hover:bg-gray-500'
 							>
-								Sign in
+								{isSubmitting ? "Submitting..." : "Sign up"}
 							</button>
 						</div>
 
