@@ -44,7 +44,7 @@ const EventSectionOne = () => {
           <img className = "m-auto pb-2" src={circletick} alt="tick icon" />
           <h2>Buy/Sell</h2>
           <p>Transaction Successfull</p>
-          <button className="bg-slate-900 hover:bg-slate-700 text-white text-xs py-1 rounded mt-4 w-60">Done</button>
+          <button className="bg-slate-900 hover:bg-slate-700 text-white text-xs py-2 rounded mt-4 w-60">Done</button>
         </div>
       </div>
     </div>
