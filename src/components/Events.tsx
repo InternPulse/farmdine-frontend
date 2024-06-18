@@ -65,7 +65,7 @@ const Events = () => {
           onClick={handlePrev}
           className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2  shadow focus:outline-none p-2"
         >
-         <FaArrowLeft className="w-4 h-4 md:w-20 md:h-20"/> 
+         <FaArrowLeft className=" md:w-20 md:h-20"/> 
         </button>
         <button
           onClick={handleNext}
