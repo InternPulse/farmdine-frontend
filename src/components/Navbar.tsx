@@ -14,7 +14,7 @@ const Navbar = () => {
 		<div className='p-4 flex-shrink-0'>
 			<nav className='flex items-center justify-between h-[71px] m-0 px-3'>
 				<img src={navLogo1} alt='Company Logo' className='rounded-full' />
-				<div className='md:flex justify-center space-x-8'>
+				<div className='md:flex justify-center space-x-8 font-semibold'>
 					<NavLink
 						to='/'
 						className='text-[#1e1e1e] no-underline mr-12 leading-[1.6] [&.active]:text-[#8bc34a] hover:text-[#8bc34a]'
