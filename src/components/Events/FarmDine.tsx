@@ -20,8 +20,8 @@ const FarmDine: React.FC<FarmDineProps> = ({
   buttonOnClick,
 }) => {
   return (
-    <div className="bg-gray-50 rounded-lg shadow-sm px-4 md:pl-20 py-6 md:py-7">
-      <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 w-full md:w-[1200px] mx-auto">
+    <div className="bg-gray-50 rounded-lg shadow-sm px-4 py-6 md:py-7 md:pl-24">
+      <div className="flex flex-col md:flex-row items-center md:items-start md:space-y-0 md:space-x-6 md:w-full mx-auto">
         <div className="flex flex-col items-center md:items-start w-full md:w-2/4 px-4 md:px-0">
           <img src={textIcon} alt="person icon" className="w-12 h-12 mb-4" />
           <h2 className="text-xl md:text-3xl font-semibold mb-4">
