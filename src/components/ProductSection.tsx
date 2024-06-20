@@ -12,7 +12,15 @@ const ProductSection: React.FC = () => {
             Providing the operational support your food business needs
           </p>
         </div>
-       <ProductCard />
+        <div className="flex space-x-2">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+        </div>
+       
     </div>
   );
 };
