@@ -1,4 +1,10 @@
 // productsData.ts
+import cabbage from '../assets/images/cabbage.jpg'
+import apple from '../assets/images/apple_fruit.jpeg'
+import tomatoe from '../assets/images/tomatoe.jpeg'
+import banana from '../assets/images/banana.jpeg'
+import carrort from '../assets/images/carrots.jpeg'
+import broccoli from '../assets/images/broccoli.jpeg'
 
 export interface Product {
     id: number;
@@ -12,121 +18,121 @@ export interface Product {
       id: 1,
       name: 'Cabbage',
       price: 50.00,
-      image: '../assets/images/cabbage.jpg'
+      image: cabbage
     },
     {
       id: 2,
       name: 'Tomato',
       price: 30.00,
-      image: '../assets/images/tomato.jpg'
+      image: tomatoe
     },
     {
       id: 3,
       name: 'Apple',
       price: 25.00,
-      image: '../assets/images/apple.jpg'
+      image: apple
     },
     {
       id: 4,
       name: 'Banana',
       price: 15.00,
-      image: '../assets/images/banana.jpg'
+      image: banana
     },
     {
       id: 5,
       name: 'Carrot',
       price: 20.00,
-      image: '../assets/images/carrot.jpg'
+      image: carrort
     },
     {
       id: 6,
       name: 'Broccoli',
       price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      image: broccoli
     },
     {
       id: 7,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Cabbage',
+      price: 50.00,
+      image: cabbage
     },
     {
       id: 8,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Apple',
+      price: 25.00,
+      image: apple
     },
     {
       id: 9,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Tomato',
+      price: 30.00,
+      image: tomatoe
     },
     {
       id: 10,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Banana',
+      price: 15.00,
+      image: banana
     },
     {
       id: 11,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Carrot',
+      price: 20.00,
+      image: carrort
     },
     {
       id: 12,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Apple',
+      price: 25.00,
+      image: apple
     },
     {
       id: 13,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Cabbage',
+      price: 50.00,
+      image: cabbage
     },
     {
       id: 14,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Carrot',
+      price: 20.00,
+      image: carrort
     },
     {
       id: 15,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Apple',
+      price: 25.00,
+      image: apple
     },
     {
       id: 16,
       name: 'Broccoli',
       price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      image: broccoli
     },
     {
       id: 17,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Cabbage',
+      price: 50.00,
+      image: cabbage
     },
     {
       id: 18,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Banana',
+      price: 15.00,
+      image: banana
     },
     {
       id: 19,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Tomato',
+      price: 30.00,
+      image: tomatoe
     },
     {
       id: 20,
-      name: 'Broccoli',
-      price: 35.00,
-      image: '../assets/images/broccoli.jpg'
+      name: 'Carrot',
+      price: 20.00,
+      image: carrort
     },
   ];
   
