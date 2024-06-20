@@ -7,7 +7,7 @@ const ProductCard: React.FC = () => {
   return (
     <div className=' py-4'>
         <div className="p-4 bg-white shadow-md rounded-md">
-            <p className='bg-lime-100 inline-block py-1 px-2 rounded-lg text-xs ml-28'>20% off</p>
+            <p className='bg-lime-100 inline-block py-1 pl-4 rounded-lg text-xs ml-28 w-20'>20% off</p>
             <img src={Carbbage} className='w-50 h-50' alt="fruit/vegetable image" />
             <div>
                 <p className='font-semibold text-slate-700'>Cabbage</p>

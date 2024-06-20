@@ -12,7 +12,13 @@ const ProductSection: React.FC = () => {
             Providing the operational support your food business needs
           </p>
         </div>
-        <div className="flex space-x-2">
+        <div className="flex overflow-x-auto space-x-2 hide-scrollbar">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
@@ -20,7 +26,16 @@ const ProductSection: React.FC = () => {
           <ProductCard />
           <ProductCard />
         </div>
-       
+        <style>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;  /* Internet Explorer 10+ */
+          scrollbar-width: none;  /* Firefox */
+        }
+      `}</style>
+
     </div>
   );
 };
