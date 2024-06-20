@@ -1,11 +1,9 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import EventSectionOne from './Events/EventSectionOne';
 import rightarrow from '../assets/arrow-right-bold.png'; 
 import sliderdots from '../assets/slider-dots.png';
-import leftarrow from '../assets/arrow-left.png';
 
-
-// data for the carousel
+// Data for the carousel
 const eventData = [
   { id: 1, title: "World's Farmers Day", description: "World Farmers' Day, also known as National Farmers' Day, is celebrated on December 23rd every year. It is a day to recognize and appreciate the contributions of farmers to our society. Farmers play a vital role in feeding our communities, preserving natural resources, and supporting local economies." },
   { id: 2, title: "Get The Best Farm Produce", description: "Fresh, seasonal produce delivered on your schedule. Save time and enjoy the best nature has to offer. Order today!" },
@@ -14,14 +12,34 @@ const eventData = [
 
 const Events = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [autoSlide, setAutoSlide] = useState<boolean>(true);
 
+  // Function to handle next slide
   const handleNext = () => {
     setCurrentIndex((prevIndex: number) => (prevIndex + 1) % eventData.length);
+    setAutoSlide(false); // Stop auto sliding on manual interaction
   };
 
+  // Function to handle previous slide
   const handlePrev = () => {
     setCurrentIndex((prevIndex: number) => (prevIndex - 1 + eventData.length) % eventData.length);
+    setAutoSlide(false); // Stop auto sliding on manual interaction
   };
+
+  // Effect for auto sliding
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+
+    if (autoSlide) {
+      interval = setInterval(() => {
+        setCurrentIndex((prevIndex: number) => (prevIndex + 1) % eventData.length);
+      }, 5000); // Adjust the interval as needed (5000ms = 5 seconds)
+    }
+
+    return () => {
+      clearInterval(interval); // Clean up the interval on component unmount or state change
+    };
+  }, [autoSlide]);
 
   return (
     <div className="flex justify-center items-center flex-col ml-3 mt-20">
@@ -36,7 +54,7 @@ const Events = () => {
         <img src="../images/eventsbg.jpg" alt="Event background image" className="absolute inset-0 object-cover w-full h-full z-0" />
 
         <div className="text-center p-6 transition-transform duration-500 ease-in-out transform z-10">
-          <div className="absolute w-full md:w-3/5 text-left top-1/2 md:top-80 left-4 md:left-10 transform -translate-y-1/2 md:translate-y-0">
+          <div className="absolute w-full md:w-3/5 text-left top-60 md:top-80 left-4 md:left-10 transform -translate-y-1/2 md:translate-y-0">
             <h2 className="text-2xl md:text-3xl font-semibold">{eventData[currentIndex].title}</h2>
             <p className="mt-4 md:mt-8 text-sm md:text-base">{eventData[currentIndex].description}</p>
           </div>
@@ -44,9 +62,8 @@ const Events = () => {
 
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 border rounded shadow focus:outline-none p-2"
-        >
-         <img src={leftarrow}  alt="arrow right" className=" w-4 h-4 md:w-20 md:h-20"/> 
+          className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2  shadow focus:outline-none p-2"
+        > 
         </button>
         <button
           onClick={handleNext}

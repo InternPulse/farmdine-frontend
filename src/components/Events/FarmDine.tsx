@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface FarmDineProps {
   title: React.ReactNode; // Change to ReactNode to accept JSX
@@ -19,10 +19,39 @@ const FarmDine: React.FC<FarmDineProps> = ({
   buttonText,
   buttonOnClick,
 }) => {
+  const leftSlideRef = useRef<HTMLDivElement>(null);
+  const rightSlideRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const leftSlide = leftSlideRef.current;
+    const rightSlide = rightSlideRef.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target === leftSlide) {
+            leftSlide?.classList.add('animate-slideInFromLeft');
+          } else if (entry.target === rightSlide) {
+            rightSlide?.classList.add('animate-slideInFromRight');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (leftSlide) observer.observe(leftSlide);
+    if (rightSlide) observer.observe(rightSlide);
+
+    return () => {
+      if (leftSlide) observer.unobserve(leftSlide);
+      if (rightSlide) observer.unobserve(rightSlide);
+    };
+  }, []);
+
   return (
-    <div className="bg-gray-50 rounded-lg shadow-sm px-4 md:pl-20 py-6 md:py-7">
-      <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 w-full md:w-[1200px] mx-auto">
-        <div className="flex flex-col items-center md:items-start w-full md:w-2/4 px-4 md:px-0">
+    <div className="bg-gray-50 rounded-lg shadow-sm px-4 py-6 md:py-7 md:pl-24">
+      <div className="flex flex-col md:flex-row items-center md:items-start md:space-y-0 md:space-x-6 md:w-full mx-auto">
+        <div ref={leftSlideRef} className="left-slide flex flex-col items-center md:items-start w-full md:w-2/4 px-4 md:px-0">
           <img src={textIcon} alt="person icon" className="w-12 h-12 mb-4" />
           <h2 className="text-xl md:text-3xl font-semibold mb-4">
             {title}
@@ -39,7 +68,7 @@ const FarmDine: React.FC<FarmDineProps> = ({
             </button>
           )}
         </div>
-        <div className="flex flex-col items-center md:items-end w-full md:w-auto px-4 md:px-0">
+        <div ref={rightSlideRef} className="rigth-slide flex flex-col items-center md:items-end w-full md:w-auto px-4 md:px-0">
           <img src={imageIcon} alt="person icon" className="w-12 h-12 mb-4 md:ml-0" />
           <img
             src={imageUrl}

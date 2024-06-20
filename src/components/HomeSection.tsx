@@ -31,10 +31,10 @@ const HomeSection = () => {
     };
 
 	return (
-		<div className='container mx-auto pb-9'>
+		<div className='container mx-auto pb-9 mb-20'>
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-4 md:px-24'>
 				<div className='pt-16 md:pt-64 left-slide-in animate__animated animate__fadeInLeft'>
-					<h1 className='text-2xl md:text-4xl font-bold'>
+					<h1 className='text-xl md:text-4xl font-bold'>
 						<span className='bg-gradient-to-r from-lime-300 via-lime-500 to-lime-700 inline-block text-transparent bg-clip-text pr-2'>
 							FarmDine
 						</span>

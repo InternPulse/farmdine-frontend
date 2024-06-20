@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { z } from "zod"
@@ -6,6 +7,15 @@ import { login } from "../services/apiService"
 import googleLogo from "../assets/images/google.png"
 import appleLogo from "../assets/images/Apple.png"
 import { useNavigate } from "react-router-dom"
+=======
+import React, { useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { login } from '../services/apiService';
+import googleLogo from "../assets/images/google.png";
+import appleLogo from "../assets/images/Apple.png";
+>>>>>>> 24e777532d3f000b126cf6d103848bd5785f1ca4
 
 const schema = z.object({
 	emailOrPhone: z.string().min(1, "Email or phone number is required"),
