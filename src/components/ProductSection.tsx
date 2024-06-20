@@ -6,6 +6,7 @@ import products from './ProductData';
 import { Product } from './ProductData';
 
 const ProductSection: React.FC = () => {
+
   return (
     <div className="container mx-auto relative">
       <div className='text-center'>
