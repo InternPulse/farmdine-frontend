@@ -90,11 +90,11 @@ const SignUpPage = () => {
 
 	return (
 		<>
-			<div className='absolute'>
+			<div className='absolute hidden lg:block'>
 				<img
 					src={logo}
 					alt='FarmDine logo'
-					className='sm:hidden w-16 h-16 relative top-5 left-16'
+					className='w-16 h-16 relative top-5 left-16'
 				/>
 			</div>
 
