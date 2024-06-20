@@ -1,49 +1,44 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
-import navLogo1 from "../assets/nav-logo1.jpg";
+// import { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
+// import { FaBars, FaTimes } from "react-icons/fa"
+import navLogo1 from "../assets/nav-logo1.jpg"
 
 const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false)
 
-	const toggleMenu = () => {
-		setIsOpen(!isOpen);
-	};
+	// const toggleMenu = () => {
+	// 	setIsOpen(!isOpen)
+	// }
 
 	return (
 		<div className='p-4 flex-shrink-0'>
 			<nav className='flex items-center justify-between h-[71px] m-0 px-3'>
-				<img
-					src={navLogo1}
-					alt='Company Logo'
-					
-					className='rounded-full'
-				/>
-				<div className='hidden md:flex justify-center space-x-8'>
-					<Link
+				<img src={navLogo1} alt='Company Logo' className='rounded-full' />
+				<div className='md:flex justify-center space-x-8'>
+					<NavLink
 						to='/'
-						className='text-[#8bc34a] no-underline mr-12 leading-[1.6] hover:text-[#8bc34a]'
+						className='text-[#1e1e1e] no-underline mr-12 leading-[1.6] [&.active]:text-[#8bc34a] hover:text-[#8bc34a]'
 					>
 						Home
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to='/productListing'
-						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
+						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] [&.active]:text-[#8bc34a] hover:text-[#8bc34a]'
 					>
 						Product Listing
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to='/contact'
-						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
+						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] [&.active]:text-[#8bc34a] hover:text-[#8bc34a]'
 					>
 						Contact
-					</Link>
-					<Link
+					</NavLink>
+					<NavLink
 						to='/help'
-						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] hover:text-[#8bc34a]'
+						className='text-[#1e1e1e] no-underline mr-16 leading-[1.6] [&.active]:text-[#8bc34a] hover:text-[#8bc34a]'
 					>
 						Help
-					</Link>
+					</NavLink>
 				</div>
 				<div className='hidden md:flex items-center space-x-4'>
 					<Link
@@ -59,9 +54,15 @@ const Navbar = () => {
 						Sign Up
 					</Link>
 				</div>
-				<div className='md:hidden flex items-center'>
+			</nav>
+
+			{/* <div className='md:hidden flex items-center'>
 					<button onClick={toggleMenu} className='focus:outline-none'>
-						{isOpen ? <FaTimes size={38} className="text-[#b3dd6e]" /> : <FaBars size={38} className="text-[#b3dd6e]"/>}
+						{isOpen ? (
+							<FaTimes size={38} className='text-[#b3dd6e]' />
+						) : (
+							<FaBars size={38} className='text-[#b3dd6e]' />
+						)}
 					</button>
 				</div>
 			</nav>
@@ -108,11 +109,12 @@ const Navbar = () => {
 						onClick={toggleMenu}
 					>
 						Sign Up
-					</Link>
-				</div>
-			)}
-		</div>
-	);
-};
+					</Link> */}
+			{/* </div> */}
 
-export default Navbar;
+			{/* )} */}
+		</div>
+	)
+}
+
+export default Navbar
