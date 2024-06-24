@@ -1,6 +1,8 @@
+import { useState } from "react";
 
 
 const CheckOut = () => {
+    const [errors, setErrors] = useState({});
   return (
     <div className="flex justify-center items-center">
         <div className="bg-slate-100 w-[600px] p-10 rounded-l-lg">
