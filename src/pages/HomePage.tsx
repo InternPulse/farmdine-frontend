@@ -5,10 +5,12 @@ import ProductSection from "../components/ProductSection"
 import Subscribe from "../components/Subscribe"
 import Partners from "../components/Partners"
 import ClientTestimonial from "../components/ClientTestimonial"
+import CheckOut from "../components/CheckOut"
 
 const HomePage = () => {
 	return (
 		<>
+			<CheckOut />
 			<HomeSection />
 			<ProductSection />
 			<Events />
