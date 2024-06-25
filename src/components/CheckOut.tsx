@@ -3,6 +3,18 @@ import { useState } from "react";
 
 const CheckOut = () => {
     const [errors, setErrors] = useState({});
+
+    const validateForm = (event: {
+        target: any; preventDefault: () => void; 
+}) => {
+        event.preventDefault(); // Prevent default form submission behavior
+        const newErrors = {};
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(event.target.email.value)) {
+            newErrors.email = 'Please enter a valid email address';
+        }
+
+    }  
   return (
     <div className="flex justify-center items-center">
         <div className="bg-slate-100 w-[600px] p-10 rounded-l-lg">
