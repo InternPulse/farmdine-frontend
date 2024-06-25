@@ -6,13 +6,20 @@ const CheckOut = () => {
 
     const validateForm = (event: {
         target: any; preventDefault: () => void; 
-}) => {
+    }) => {
         event.preventDefault(); // Prevent default form submission behavior
         const newErrors = {};
 
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(event.target.email.value)) {
             newErrors.email = 'Please enter a valid email address';
         }
+        if (!event.target.name.value) {
+            newErrors.name = 'Please enter your name on card';
+        }
+        if (event.target.cardNumber.value.length !== 16) {
+            newErrors.cardNumber = 'Please enter a valid 16-digit card number';
+        }
+
 
     }  
   return (
