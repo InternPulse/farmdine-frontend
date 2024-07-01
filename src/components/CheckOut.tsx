@@ -1,13 +1,34 @@
+import { useState } from "react";
 
 
 const CheckOut = () => {
+    const [errors, setErrors] = useState({});
+
+    const validateForm = (event: {
+        target: any; preventDefault: () => void; 
+    }) => {
+        event.preventDefault(); // Prevent default form submission behavior
+        const newErrors = {};
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(event.target.email.value)) {
+            newErrors.email = 'Please enter a valid email address';
+        }
+        if (!event.target.name.value) {
+            newErrors.name = 'Please enter your name on card';
+        }
+        if (event.target.cardNumber.value.length !== 16) {
+            newErrors.cardNumber = 'Please enter a valid 16-digit card number';
+        }
+
+
+    }  
   return (
     <div className="flex justify-center items-center">
         <div className="bg-slate-100 w-[600px] p-10 rounded-l-lg">
-            <div className="flex mb-6"><img className="w-4 h-5 mr-2 mt-1" src="src/assets/arrow-left.png" alt="left arrow"/><h1 className="font-semibold text-xl">Checkout</h1></div>
+            <div className="flex mb-2"><img className="w-4 h-5 mr-2 mt-1" src="src/assets/arrow-left.png" alt="left arrow"/><h1 className="font-semibold text-xl">Checkout</h1></div>
             <div>
                 <p>Payment Details</p>
-                <div className="flex space-x-10 my-4 justify-center items-center">
+                <div className="flex space-x-10 justify-center my-2 items-center">
                     <div className="bg-white border px-4 py-4"><img className="h-8 w-20" src="src/assets/logos_google-pay.jpg" alt="Visa pay logo"/></div>
                     <div className="bg-white border px-4 py-4"><img className="h-8 w-20" src="src/assets/logos_visa.jpg" alt="Master card pay logo"/></div>
                     <div className="bg-white border px-4 py-2"><img className="h-12 w-20" src="src/assets/logos_mastercard.jpg" alt="Google pay logo"/></div>
